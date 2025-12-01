@@ -1,0 +1,118 @@
+/*
+** Fichier : projets.css
+** Description : Styles spécifiques à la page Projets (cartes, tags, onglets).
+*/
+
+.project-tabs {
+    display: flex;
+    border-bottom: 2px solid var(--color-light-text);
+    margin-bottom: var(--spacing-lg);
+}
+
+.tab-link {
+    padding: var(--spacing-sm) var(--spacing-md);
+    margin-right: var(--spacing-xs);
+    color: var(--color-text);
+    font-weight: 600;
+    border: none;
+    border-bottom: 4px solid transparent;
+    transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.tab-link:hover {
+    color: var(--color-primary);
+    border-bottom: 4px solid var(--color-primary);
+    text-decoration: none;
+}
+
+.tab-link.active {
+    color: var(--color-secondary);
+    border-bottom: 4px solid var(--color-secondary);
+}
+
+.project-category {
+    padding: var(--spacing-md) 0;
+}
+
+.project-card {
+    background-color: var(--color-surface);
+    padding: var(--spacing-lg);
+    border-radius: 10px;
+    margin-bottom: var(--spacing-xl);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.project-card header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-md);
+    border-bottom: 1px solid var(--color-background);
+    padding-bottom: var(--spacing-sm);
+}
+
+.project-card h4 {
+    margin: 0;
+    color: var(--color-primary);
+}
+
+.project-tag {
+    background-color: #f39c12; /* Orange pour les tags */
+    color: var(--color-surface);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.project-content h5 {
+    font-size: 1.1rem;
+    color: var(--color-secondary);
+    margin-top: var(--spacing-md);
+}
+
+.project-actions {
+    margin-top: var(--spacing-lg);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+}
+
+.no-content {
+    color: var(--color-light-text);
+    font-style: italic;
+    padding: var(--spacing-lg);
+    background-color: var(--color-surface);
+    border: 1px dashed var(--color-light-text);
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Responsivité de la page Projets */
+@media (max-width: 600px) {
+    .project-card header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-xs);
+    }
+    
+    .project-tag {
+        align-self: flex-end;
+    }
+
+    .project-actions {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+    
+    .project-actions .button {
+        width: 100%;
+    }
+}

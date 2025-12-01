@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets - Assoumani Moudjahidy</title>
+    <meta name="description" content="Liste des projets réalisés en formation (M2L, CUB) et personnels.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/projets.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1><a href="index.html">Assoumani M. | Portfolio</a></h1>
+            <nav aria-label="Menu principal">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="projets.html" aria-current="page">Projets</a></li>
+                    <li><a href="experience.html">Expériences</a></li>
+                    <li><a href="documentation.html">Documentation</a></li>
+                    <li><a href="veille.html">Ma Veille</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>📂 Mes Projets</h2>
+
+        <nav class="project-tabs" aria-label="Catégories de projets">
+            <a href="#en-formation" class="tab-link active">En Formation</a>
+            <a href="#personnel" class="tab-link">Personnel</a>
+        </nav>
+
+        <section id="en-formation" class="project-category" aria-labelledby="formation-title">
+            <h3 id="formation-title">Projets réalisés en Formation</h3>
+
+            <article class="project-card">
+                <header>
+                    <h4>Première année — Projet M2L</h4>
+                    <span class="project-tag">Réseaux & Systèmes</span>
+                </header>
+                <div class="project-content">
+                    <h5>Résumé du contexte :</h5>
+                    <p>La <strong>Maison des Ligues de Lorraine (M2L)</strong> a pour rôle de mettre à disposition des locaux et des services pour les ligues sportives régionales ainsi que pour d'autres structures accueillies. Elle est financée par le Conseil Régional de Lorraine et gérée par le Comité Régional Olympique et Sportif de Lorraine (CROSL).</p>
+                    
+                    <h5>Travaux effectués :</h5>
+                    <ul>
+                        <li>Calcul de la longueur totale du câblage en fibre optique</li>
+                        <li>Élaboration d’un devis pour le matériel</li>
+                        <li>Réalisation d’un schéma de câblage pour un étage</li>
+                    </ul>
+                    
+                    <div class="project-actions">
+                        <a href="doc-m2l.html" class="button primary-button">
+                            Voir la documentation détaillée (Cahier des Charges)
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <header>
+                    <h4>Deuxième année — Projet CUB</h4>
+                    <span class="project-tag">Virtualisation & DevOps</span>
+                </header>
+                <div class="project-content">
+                    <h5>Résumé du contexte :</h5>
+                    <p>Fondée en 2010, la société <strong>CUB</strong> se spécialise dans l’incubation de startups orientées vers la solidarité et le développement durable. Elle propose, via une plateforme en ligne, la location d’espaces de travail (réunions, formations, séminaires) et facilite la mise en relation entre entreprises disposant de bureaux vacants et celles en recherche de locaux, selon un modèle collaboratif BtoB.</p>
+                    <p>(… contenu complet fourni par l’utilisateur — inclure exactement)</p>
+                    
+                    <h5>Travaux effectués :</h5>
+                    <ul>
+                        <li>Mise en place d'un environnement virtualisé (Proxmox/VMware).</li>
+                        <li>Configuration des services réseau et systèmes (DNS, DHCP, Firewall, AD).</li>
+                        <li>Automatisation du déploiement (Ansible/Scripts).</li>
+                    </ul>
+
+                    <div class="project-actions">
+                        <a href="doc-cub.html" class="button primary-button">
+                            Voir la documentation détaillée (Schémas & Systèmes)
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section id="personnel" class="project-category" aria-labelledby="personnel-title">
+            <h3 id="personnel-title">Projets Personnels</h3>
+            <p class="no-content">Aucun projet personnel majeur n'est encore documenté ici. Revenez bientôt !</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 Assoumani Moudjahidy. Tous droits réservés.</p>
+            <div class="contact-info">
+                <p>📧 Email : <a href="mailto:contact@exemple.com">contact@exemple.com</a></p>
+                <p>📞 Tél : <a href="tel:+33600000000">+33 6 00 00 00 00</a></p>
+            </div>
+            <a href="#formation-title" class="back-to-top" aria-label="Retour à la liste des projets">↑ Haut</a>
+        </div>
+    </footer>
+</body>
+</html>

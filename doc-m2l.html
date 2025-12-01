@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation Projet M2L - Assoumani Moudjahidy</title>
+    <meta name="description" content="Documentation détaillée du projet Maison des Ligues de Lorraine (M2L) : Plan d'adressage, Schémas, Devis.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/documentation.css"> <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body class="dark-page-body">
+    <header class="site-header">
+        <div class="container">
+            <h1><a href="index.html">Assoumani M. | Portfolio</a></h1>
+            <nav aria-label="Menu principal">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="projets.html">Projets</a></li>
+                    <li><a href="experience.html">Expériences</a></li>
+                    <li><a href="documentation.html">Documentation</a></li>
+                    <li><a href="veille.html">Ma Veille</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header dark-bg">
+            <div class="container">
+                <h2>- Documentation Projet M2L -</h2>
+                <p>Cahier des Charges, Plan d'adressage, Devis et Schémas de câblage.</p>
+            </div>
+        </section>
+
+        <section class="container" aria-labelledby="m2l-docs-list">
+            <h3 id="m2l-docs-list" class="center-text">- Documents du Projet -</h3>
+            
+            <p class="center-text">Cliquez sur le titre d'un document PDF pour l'afficher ci-dessous. Les schémas (images PNG) s'ouvrent dans une nouvelle fenêtre.</p>
+
+            <div class="doc-list">
+                <div class="document-item-title">
+                    <h4>Rapport / Cahier des Charges du Projet (PDF)</h4>
+                    <div class="document-actions">
+                        <a href="#doc-viewer" onclick="document.getElementById('doc-viewer-object').data='assets/docs/m2l/rapport_m2l.pdf'" class="button secondary-button">Ouvrir</a>
+                        <a href="assets/docs/m2l/rapport_m2l.pdf" download="M2L_Cahier_des_Charges.pdf" class="button download-button">Télécharger (PDF)</a>
+                    </div>
+                </div>
+                
+                <div class="document-item-title">
+                    <h4>Plan d'Adressage IP (PDF)</h4>
+                    <div class="document-actions">
+                        <a href="#doc-viewer" onclick="document.getElementById('doc-viewer-object').data='assets/docs/m2l/plan_adressage.pdf'" class="button secondary-button">Ouvrir</a>
+                        <a href="assets/docs/m2l/plan_adressage.pdf" download="M2L_Plan_Adressage.pdf" class="button download-button">Télécharger (PDF)</a>
+                    </div>
+                </div>
+
+                <div class="document-item-title">
+                    <h4>Devis et Équipements utilisés (PDF)</h4>
+                    <div class="document-actions">
+                        <a href="#doc-viewer" onclick="document.getElementById('doc-viewer-object').data='assets/docs/m2l/devis_equipements.pdf'" class="button secondary-button">Ouvrir</a>
+                        <a href="assets/docs/m2l/devis_equipements.pdf" download="M2L_Devis_Equipements.pdf" class="button download-button">Télécharger (PDF)</a>
+                    </div>
+                </div>
+
+                <div class="document-item-title">
+                    <h4>Schéma de Câblage pour un Étage (Image)</h4>
+                    <div class="document-actions">
+                        <a href="assets/docs/m2l/schema.png" target="_blank" class="button secondary-button">Ouvrir (Nouvelle fenêtre)</a>
+                        <a href="assets/docs/m2l/schema.png" download="M2L_Schema_Cablage.png" class="button download-button">Télécharger (PNG)</a>
+                    </div>
+                </div>
+            </div>
+            
+            <h3 id="doc-viewer" class="center-text" style="margin-top: 50px; color: #fff;">Visualiseur de Document</h3>
+            <div class="doc-embed-container">
+                <object id="doc-viewer-object" data="" type="application/pdf" width="100%" height="800px" aria-label="Visualiseur du document sélectionné">
+                    <p style="color: #ccc; text-align: center;">Sélectionnez un document PDF ci-dessus pour l'afficher ici. Les schémas s'ouvrent dans une nouvelle fenêtre.</p>
+                </object>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 Assoumani Moudjahidy. Tous droits réservés.</p>
+            <div class="contact-info">
+                <p>📧 Email : <a href="mailto:contact@exemple.com">contact@exemple.com</a></p>
+                <p>📞 Tél : <a href="tel:+33600000000">+33 6 00 00 00 00</a></p>
+            </div>
+            <a href="#m2l-docs-list" class="back-to-top" aria-label="Retour en haut de page">↑ Haut</a>
+        </div>
+    </footer>
+</body>
+</html>

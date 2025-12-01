@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation Réseaux - Assoumani Moudjahidy</title>
+    <meta name="description" content="Documents théoriques et exercices pratiques sur les concepts fondamentaux des réseaux.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/documentation.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body class="dark-page-body">
+    <header class="site-header">
+        <div class="container">
+            <h1><a href="index.html">Assoumani M. | Portfolio</a></h1>
+            <nav aria-label="Menu principal">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="projets.html">Projets</a></li>
+                    <li><a href="experience.html">Expériences</a></li>
+                    <li><a href="documentation.html" aria-current="page">Documentation</a></li>
+                    <li><a href="veille.html">Ma Veille</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header dark-bg">
+            <div class="container">
+                <h2>- Documentation Réseaux -</h2>
+            </div>
+        </section>
+
+        <section class="container" aria-labelledby="reseaux-docs-list">
+            <h3 id="reseaux-docs-list" class="center-text">- Documents à consulter -</h3>
+            
+            <p class="center-text">Cliquez sur le titre d'un document pour l'afficher ci-dessous.</p>
+
+            <div class="doc-list">
+                <div class="document-item-title">
+                    <h4>Exercice sous réseaux IP</h4>
+                    <div class="document-actions">
+                        <a href="#doc-viewer" onclick="document.getElementById('doc-viewer-object').data='assets/docs/reseaux/exercice_ip.pdf'" class="button secondary-button">Ouvrir</a>
+                        <a href="assets/docs/reseaux/exercice_ip.pdf" download="Reseaux_Exercices_IP.pdf" class="button download-button">Télécharger (PDF)</a>
+                    </div>
+                </div>
+                <div class="document-item-title">
+                    <h4>Filtrage | Acl</h4>
+                    <div class="document-actions">
+                        <a href="#doc-viewer" onclick="document.getElementById('doc-viewer-object').data='assets/docs/reseaux/filtrage_acl.pdf'" class="button secondary-button">Ouvrir</a>
+                        <a href="assets/docs/reseaux/filtrage_acl.pdf" download="Reseaux_Filtrage_ACL.pdf" class="button download-button">Télécharger (PDF)</a>
+                    </div>
+                </div>
+                <div class="document-item-title">
+                    <h4>Adressage IPV6</h4>
+                    <div class="document-actions">
+                        <a href="#doc-viewer" onclick="document.getElementById('doc-viewer-object').data='assets/docs/reseaux/adressage_ipv6.pdf'" class="button secondary-button">Ouvrir</a>
+                        <a href="assets/docs/reseaux/adressage_ipv6.pdf" download="Reseaux_Adressage_IPV6.pdf" class="button download-button">Télécharger (PDF)</a>
+                    </div>
+                </div>
+            </div>
+
+            <h3 id="doc-viewer" class="center-text" style="margin-top: 50px; color: #fff;">Visualiseur de Document</h3>
+            <div class="doc-embed-container">
+                <object id="doc-viewer-object" data="" type="application/pdf" width="100%" height="800px" aria-label="Visualiseur du document sélectionné">
+                    <p style="color: #ccc; text-align: center;">Sélectionnez un document ci-dessus pour l'afficher ici.</p>
+                </object>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 Assoumani Moudjahidy. Tous droits réservés.</p>
+            <div class="contact-info">
+                <p>📧 Email : <a href="mailto:contact@exemple.com">contact@exemple.com</a></p>
+                <p>📞 Tél : <a href="tel:+33600000000">+33 6 00 00 00 00</a></p>
+            </div>
+            <a href="#reseaux-docs-list" class="back-to-top" aria-label="Retour en haut de page">↑ Haut</a>
+        </div>
+    </footer>
+</body>
+</html>

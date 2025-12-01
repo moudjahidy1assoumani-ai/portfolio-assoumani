@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation Projet CUB - Assoumani Moudjahidy</title>
+    <meta name="description" content="Documentation détaillée du projet CUB : Schémas d'architecture et fiches d'installation des services (AD, DHCP, DNS, filtrage, Centreon).">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/documentation.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body class="dark-page-body">
+    <header class="site-header">
+        <div class="container">
+            <h1><a href="index.html">Assoumani M. | Portfolio</a></h1>
+            <nav aria-label="Menu principal">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="projets.html">Projets</a></li>
+                    <li><a href="experience.html">Expériences</a></li>
+                    <li><a href="documentation.html">Documentation</a></li>
+                    <li><a href="veille.html">Ma Veille</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header dark-bg">
+            <div class="container">
+                <h2>- Documentation Projet CUB -</h2>
+                <p>Schémas d'architecture et fiches d'installation des services.</p>
+            </div>
+        </section>
+
+        <section class="container" aria-labelledby="cub-docs-list">
+            <h3 id="cub-docs-list" class="center-text">- Documents du Projet -</h3>
+            
+            <p class="center-text">Cliquez sur le titre d'un document PDF pour l'afficher ci-dessous. Les fichiers images (.png) s'ouvriront dans une nouvelle fenêtre.</p>
+
+            <div class="doc-list">
+                <div class="document-item-title">
+                    <h4>Schéma d'Architecture CUB (Fichier principal)</h4>
+                    <div class="document-actions">
+                        <a href="assets/docs/cub/schema_cub.png" target="_blank" class="button secondary-button">Ouvrir (Nouvelle fenêtre)</a>
+                        <a href="assets/docs/cub/schema_cub.png" download="CUB_Schema_Architecture.png" class="button download-button">Télécharger (PNG)</a>
+                    </div>
+                </div>
+                
+                <div class="document-item-title">
+                    <h4>Active Directory (Installation et Configuration)</h4>
+                    <div class="document-actions">
+                        <a href="#doc-viewer" onclick="document.getElementById('doc-viewer-object').data='assets/docs/cub/doc_ad.pdf'" class="button secondary-button">Ouvrir</a>
+                        <a href="assets/docs/cub/doc_ad.pdf" download="CUB_Active_Directory.pdf" class="button download-button">Télécharger (PDF)</a>
+                    </div>
+                </div>
+
+                <div class="document-item-title">
+                    <h4>Installation et configuration du service DHCP</h4>
+                    <div class="document-actions">
+                        <a href="#doc-viewer" onclick="document.getElementById('doc-viewer-object').data='assets/docs/cub/dhcp_installation.pdf'" class="button secondary-button">Ouvrir</a>
+                        <a href="assets/docs/cub/dhcp_installation.pdf" download="CUB_DHCP_Installation.pdf" class="button download-button">Télécharger (PDF)</a>
+                    </div>
+                </div>
+
+                <div class="document-item-title">
+                    <h4>Mise en place du serveur DHCP avec Debian 12</h4>
+                    <div class="document-actions">
+                        <a href="#doc-viewer" onclick="document.getElementById('doc-viewer-object').data='assets/docs/cub/dhcp_debian12.pdf'" class="button secondary-button">Ouvrir</a>
+                        <a href="assets/docs/cub/dhcp_debian12.pdf" download="CUB_DHCP_Debian12.pdf" class="button download-button">Télécharger (PDF)</a>
+                    </div>
+                </div>
+                
+                <div class="document-item-title">
+                    <h4>Configurer le service Agent relais DHCP avec Debian</h4>
+                    <div class="document-actions">
+                        <a href="#doc-viewer" onclick="document.getElementById('doc-viewer-object').data='assets/docs/cub/dhcp_agent_relais_debian.pdf'" class="button secondary-button">Ouvrir</a>
+                        <a href="assets/docs/cub/dhcp_agent_relais_debian.pdf" download="CUB_DHCP_AgentRelais_Debian.pdf" class="button download-button">Télécharger (PDF)</a>
+                    </div>
+                </div>
+                
+                <div class="document-item-title">
+                    <h4>Configurer le service DNS pour les ordinateurs du réseau utilisateurs</h4>
+                    <div class="document-actions">
+                        <a href="#doc-viewer" onclick="document.getElementById('doc-viewer-object').data='assets/docs/cub/dns_reseau_utilisateurs.pdf'" class="button secondary-button">Ouvrir</a>
+                        <a href="assets/docs/cub/dns_reseau_utilisateurs.pdf" download="CUB_DNS_Reseau_Users.pdf" class="button download-button">Télécharger (PDF)</a>
+                    </div>
+                </div>
+                
+                <div class="document-item-title">
+                    <h4>Configurer le service DNS récursif pour les ordinateurs du réseau utilisateurs</h4>
+                    <div class="document-actions">
+                        <a href="#doc-viewer" onclick="document.getElementById('doc-viewer-object').data='assets/docs/cub/dns_recursif.pdf'" class="button secondary-button">Ouvrir</a>
+                        <a href="assets/docs/cub/dns_recursif.pdf" download="CUB_DNS_Recursif.pdf" class="button download-button">Télécharger (PDF)</a>
+                    </div>
+                </div>
+                
+                <div class="document-item-title">
+                    <h4>Paramétrage filtrage et NAT StormShield</h4>
+                    <div class="document-actions">
+                        <a href="#doc-viewer" onclick="document.getElementById('doc-viewer-object').data='assets/docs/cub/stormshield_filtrage_nat.pdf'" class="button secondary-button">Ouvrir</a>
+                        <a href="assets/docs/cub/stormshield_filtrage_nat.pdf" download="CUB_StormShield_Filtrage_NAT.pdf" class="button download-button">Télécharger (PDF)</a>
+                    </div>
+                </div>
+
+                <div class="document-item-title">
+                    <h4>Documentation Centreon (Installation et Monitoring)</h4>
+                    <div class="document-actions">
+                        <a href="#doc-viewer" onclick="document.getElementById('doc-viewer-object').data='assets/docs/cub/doc_centreon.pdf'" class="button secondary-button">Ouvrir</a>
+                        <a href="assets/docs/cub/doc_centreon.pdf" download="CUB_Centreon.pdf" class="button download-button">Télécharger (PDF)</a>
+                    </div>
+                </div>
+                
+                <div class="document-item-title">
+                    <h4>Schéma général du réseau (Topologie)</h4>
+                    <div class="document-actions">
+                        <a href="assets/docs/cub/schema_reseau.png" target="_blank" class="button secondary-button">Ouvrir (Nouvelle fenêtre)</a>
+                        <a href="assets/docs/cub/schema_reseau.png" download="CUB_Schema_Reseau.png" class="button download-button">Télécharger (PNG)</a>
+                    </div>
+                </div>
+            </div>
+
+            <h3 id="doc-viewer" class="center-text" style="margin-top: 50px; color: #fff;">Visualiseur de Document</h3>
+            <div class="doc-embed-container">
+                <object id="doc-viewer-object" data="" type="application/pdf" width="100%" height="800px" aria-label="Visualiseur du document sélectionné">
+                    <p style="color: #ccc; text-align: center;">Sélectionnez un document PDF ci-dessus pour l'afficher ici. Les schémas s'ouvrent dans une nouvelle fenêtre.</p>
+                </object>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 Assoumani Moudjahidy. Tous droits réservés.</p>
+            <div class="contact-info">
+                <p>📧 Email : <a href="mailto:contact@exemple.com">contact@exemple.com</a></p>
+                <p>📞 Tél : <a href="tel:+33600000000">+33 6 00 00 00 00</a></p>
+            </div>
+            <a href="#cub-docs-list" class="back-to-top" aria-label="Retour en haut de page">↑ Haut</a>
+        </div>
+    </footer>
+</body>
+</html>
