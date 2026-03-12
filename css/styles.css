@@ -75,8 +75,9 @@ a:focus, button:focus { outline: 2px solid var(--neon-cyan); outline-offset: 3px
   border-radius: 2px;
 }
 
-.container { max-width: var(--max-width); margin: 0 auto; padding: 0 var(--sp-md); position: relative; z-index: 1; }
+.container { max-width: var(--max-width); margin: 0 auto; padding-left: var(--sp-md); padding-right: var(--sp-md); position: relative; z-index: 1; }
 main { padding-top: 96px; padding-bottom: var(--sp-xl); min-height: 80vh; }
+main.container { padding-top: 96px; }
 
 /* HEADER */
 .site-header {
