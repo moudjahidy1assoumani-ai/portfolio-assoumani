@@ -1,114 +1,339 @@
+/*
+** projets.css — Styles pour la page Projets (dark theme IA/Manga/Football)
+*/
 
+/* === Tabs de navigation === */
 .project-tabs {
-    display: flex;
-    border-bottom: 2px solid var(--color-light-text);
-    margin-bottom: var(--spacing-lg);
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin: var(--sp-lg) 0 var(--sp-md);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  padding-bottom: var(--sp-sm);
 }
 
 .tab-link {
-    padding: var(--spacing-sm) var(--spacing-md);
-    margin-right: var(--spacing-xs);
-    color: var(--color-text);
-    font-weight: 600;
-    border: none;
-    border-bottom: 4px solid transparent;
-    transition: border-color 0.2s ease, color 0.2s ease;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--text-secondary);
+  padding: 0.5rem 1.1rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
 }
-
 .tab-link:hover {
-    color: var(--color-primary);
-    border-bottom: 4px solid var(--color-primary);
-    text-decoration: none;
+  color: var(--neon-cyan);
+  background: rgba(0,217,255,0.06);
+}
+.tab-link.active, .tab-link:focus {
+  color: var(--neon-cyan);
+  border-color: rgba(0,217,255,0.3);
+  background: rgba(0,217,255,0.08);
 }
 
-.tab-link.active {
-    color: var(--color-secondary);
-    border-bottom: 4px solid var(--color-secondary);
-}
-
+/* === Project Category === */
 .project-category {
-    padding: var(--spacing-md) 0;
+  padding-top: var(--sp-lg);
+  padding-bottom: var(--sp-xl);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+.project-category:last-child { border-bottom: none; }
+.project-category > h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--text-white);
+  margin-bottom: var(--sp-lg);
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
 }
 
+/* === Grille de cartes === */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--sp-md);
+}
+
+/* ================================================
+   CARTE PROJET — style "Fiche de stats Football/Manga"
+================================================ */
 .project-card {
-    background-color: var(--color-surface);
-    padding: var(--spacing-lg);
-    border-radius: 10px;
-    margin-bottom: var(--spacing-xl);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease;
+  background: var(--bg-card);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  position: relative;
+  transition: all 0.35s cubic-bezier(0.22,1,0.36,1);
+  cursor: default;
+}
+
+/* Ligne colorée en haut selon le type */
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--neon-cyan), var(--neon-violet));
+  transition: opacity 0.3s ease;
+}
+
+/* Effet holographique au survol */
+.project-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(0,217,255,0.04) 0%,
+    rgba(124,58,237,0.04) 50%,
+    rgba(16,185,129,0.04) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
 }
 
 .project-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-6px) scale(1.01);
+  border-color: rgba(0,217,255,0.25);
+  box-shadow:
+    0 20px 40px rgba(0,0,0,0.4),
+    0 0 0 1px rgba(0,217,255,0.1),
+    inset 0 0 30px rgba(0,217,255,0.03);
 }
+.project-card:hover::after { opacity: 1; }
 
+/* Header de carte */
 .project-card header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: var(--spacing-md);
-    border-bottom: 1px solid var(--color-background);
-    padding-bottom: var(--spacing-sm);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: var(--sp-md) var(--sp-md) 0;
+  gap: var(--sp-sm);
 }
 
-.project-card h4 {
-    margin: 0;
-    color: var(--color-primary);
+.project-card header h4 {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-white);
+  line-height: 1.3;
+  margin: 0;
+  flex: 1;
 }
 
 .project-tag {
-    background-color: #f39c12; /* Orange pour les tags */
-    color: var(--color-surface);
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 0.85rem;
-    font-weight: 700;
-    flex-shrink: 0;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 4px 10px;
+  border-radius: 999px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Couleurs des tags selon catégorie */
+.project-tag.reseaux    { background: rgba(0,217,255,0.12); color: var(--neon-cyan); border: 1px solid rgba(0,217,255,0.25); }
+.project-tag.systemes   { background: rgba(124,58,237,0.12); color: #a78bfa; border: 1px solid rgba(124,58,237,0.25); }
+.project-tag.securite   { background: rgba(244,114,182,0.12); color: var(--neon-pink); border: 1px solid rgba(244,114,182,0.25); }
+.project-tag.auto       { background: rgba(16,185,129,0.12); color: var(--neon-emerald); border: 1px solid rgba(16,185,129,0.25); }
+.project-tag.infra      { background: rgba(251,191,36,0.12); color: var(--neon-amber); border: 1px solid rgba(251,191,36,0.25); }
+.project-tag.personnel  { background: rgba(124,58,237,0.12); color: #a78bfa; border: 1px solid rgba(124,58,237,0.25); }
+
+/* Corps de la carte */
+.project-content {
+  padding: var(--sp-sm) var(--sp-md) var(--sp-md);
 }
 
 .project-content h5 {
-    font-size: 1.1rem;
-    color: var(--color-secondary);
-    margin-top: var(--spacing-md);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  margin-bottom: 0.4rem;
+  margin-top: var(--sp-sm);
 }
 
+.project-content p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  margin-bottom: var(--sp-sm);
+}
+
+.project-content ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: var(--sp-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.project-content ul li {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  padding-left: 1.2rem;
+  position: relative;
+  line-height: 1.5;
+}
+.project-content ul li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--neon-cyan);
+  font-size: 0.75rem;
+}
+
+/* Séparateur léger */
+.card-divider {
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  margin: var(--sp-sm) 0;
+}
+
+/* Actions de carte */
 .project-actions {
-    margin-top: var(--spacing-lg);
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--spacing-md);
+  margin-top: var(--sp-md);
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
 .no-content {
-    color: var(--color-light-text);
-    font-style: italic;
-    padding: var(--spacing-lg);
-    background-color: var(--color-surface);
-    border: 1px dashed var(--color-light-text);
-    border-radius: 8px;
-    text-align: center;
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-style: italic;
+  padding: var(--sp-md);
+  border: 1px dashed rgba(255,255,255,0.1);
+  border-radius: var(--radius-md);
 }
 
-/* Responsivité de la page Projets */
-@media (max-width: 600px) {
-    .project-card header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: var(--spacing-xs);
-    }
-    
-    .project-tag {
-        align-self: flex-end;
-    }
+/* ================================================
+   SECTION PROJETS DE STAGE — Accordéons
+================================================ */
+.stage-period {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--neon-amber);
+  letter-spacing: 0.06em;
+  margin-bottom: var(--sp-md);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.stage-period::before {
+  content: '◈';
+  color: var(--neon-amber);
+}
 
-    .project-actions {
-        flex-direction: column;
-        gap: var(--spacing-sm);
-    }
-    
-    .project-actions .button {
-        width: 100%;
-    }
+/* Accordéon groupe de docs */
+.docs-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: var(--sp-sm);
+}
+
+.accordion-group {
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.accordion-trigger {
+  width: 100%;
+  background: rgba(0,217,255,0.04);
+  border: none;
+  padding: 0.7rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  color: var(--text-primary);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  transition: background 0.2s ease;
+  text-align: left;
+}
+.accordion-trigger:hover { background: rgba(0,217,255,0.09); }
+.accordion-trigger[aria-expanded="true"] {
+  background: rgba(0,217,255,0.1);
+  color: var(--neon-cyan);
+}
+
+.accordion-icon {
+  color: var(--neon-cyan);
+  font-size: 0.9rem;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+  margin-left: 0.5rem;
+}
+.accordion-trigger[aria-expanded="true"] .accordion-icon {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  display: none;
+  padding: 0.5rem 1rem 1rem;
+  background: var(--bg-card-2);
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+.accordion-content.open { display: block; }
+
+/* Liste de PDF */
+.pdf-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 0.5rem;
+}
+
+.pdf-list li a {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.5rem 0.7rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  background: rgba(255,255,255,0.02);
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+  font-family: var(--font-mono);
+  word-break: break-all;
+}
+
+.pdf-list li a:hover {
+  color: var(--neon-cyan);
+  background: rgba(0,217,255,0.07);
+  border-color: rgba(0,217,255,0.2);
+}
+
+.pdf-icon {
+  font-size: 1rem;
+  flex-shrink: 0;
+  filter: drop-shadow(0 0 4px rgba(255,80,80,0.5));
+}
+
+/* ================================================
+   Responsive Projets
+================================================ */
+@media (max-width: 700px) {
+  .project-grid { grid-template-columns: 1fr; }
+  .project-card header { flex-direction: column; gap: 0.5rem; }
 }

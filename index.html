@@ -1,74 +1,251 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil - Assoumani Moudjahidy</title>
-    <meta name="description" content="Portfolio d'Assoumani Moudjahidy, étudiant en BTS SIO SISR : CV, projets et expériences professionnelles.">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil — Assoumani Moudjahidy</title>
+  <meta name="description" content="Portfolio d'Assoumani Moudjahidy — BTS SIO SISR — Systèmes, Réseaux, Automatisation & Cybersécurité.">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header class="site-header">
-        <div class="container">
-            <h1><a href="index.html">Assoumani M. | Portfolio</a></h1>
-            <nav aria-label="Menu principal">
-                <ul>
-                    <li><a href="index.html" aria-current="page">Accueil</a></li>
-                    <li><a href="projets.html">Projets</a></li>
-                    <li><a href="experience.html">Expériences</a></li>
-                    <li><a href="documentation.html">Documentation</a></li>
-                    <li><a href="veille.html">Ma Veille</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <main class="container page-accueil">
-        <section class="presentation-section" aria-labelledby="presentation-title">
-            <h2 id="presentation-title">👋 Bienvenue</h2>
-            
-            <div class="presentation-content">
-                <div class="text-block">
-                    <p>Bonjour, je m’appelle <strong>Assoumani Moudjahidy</strong>, j’ai 19 ans.</p>
-                    <p>Actuellement étudiant en <strong>BTS SIO</strong> (Services Informatiques aux Organisations), option <strong>SISR</strong> (Solutions d’Infrastructure, Systèmes et Réseaux).</p>
-                    <p>J’ai obtenu un baccalauréat général avec les spécialités <strong>Mathématiques</strong> et <strong>NSI</strong> (Numérique et Sciences Informatiques).</p>
-                    <p>Vous trouverez sur cette page mon CV, ainsi qu’un aperçu de mes projets et réalisations.</p>
-                    <p>Pour me contacter, vous pouvez vous référer aux informations indiquées dans mon CV ou à celles présentes en bas de page.</p>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container">
+      <h1><a href="index.html">Assoumani M. | Portfolio</a></h1>
+      <nav aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html" aria-current="page">Accueil</a></li>
+          <li><a href="projets.html">Projets</a></li>
+          <li><a href="experience.html">Expériences</a></li>
+          <li><a href="documentation.html">Documentation</a></li>
+          <li><a href="veille.html">Ma Veille</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero-section" aria-labelledby="hero-name">
+      <div class="container">
+        <div class="hero-inner">
+
+          <!-- Texte gauche -->
+          <div class="hero-text">
+            <div class="hero-status">
+              <span class="status-dot"></span>
+              Disponible · BTS SIO SISR
+            </div>
+
+            <h1 class="hero-title">
+              Bonjour, je suis
+              <span class="name-highlight" id="hero-name">Assoumani Moudjahidy</span>
+            </h1>
+
+            <p class="hero-subtitle">&gt; Technicien IT · Réseaux · Cybersécurité · Automatisation</p>
+
+            <p class="hero-desc">
+              Étudiant passionné en <strong style="color:var(--text-white)">BTS SIO option SISR</strong>,
+              je conçois des infrastructures robustes, automatise des déploiements complexes
+              et sécurise des environnements Active Directory. Bac général mention — spécialités
+              <strong style="color:var(--neon-cyan)">Maths</strong> &amp;
+              <strong style="color:var(--neon-cyan)">NSI</strong>.
+            </p>
+
+            <div class="hero-cta">
+              <a href="assets/cv/Assoumani_Moudjahidy_CV.pdf" download class="button primary-button">
+                ↓ Télécharger CV
+              </a>
+              <a href="projets.html" class="button secondary-button">
+                Voir mes projets →
+              </a>
+            </div>
+          </div>
+
+          <!-- Panel stats droite (style fiche joueur) -->
+          <div class="hero-stats-panel" aria-hidden="true">
+
+            <div class="stat-card">
+              <div class="stat-card-header">
+                <span class="stat-card-icon">🌐</span>
+                <span class="stat-card-title">Réseaux & Systèmes</span>
+              </div>
+              <div class="stat-card-value">2+</div>
+              <div class="stat-card-label">Années en infrastructure IT</div>
+              <div class="skill-bar-container">
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="--target-width:85%;animation-delay:0.8s"></div>
                 </div>
+              </div>
             </div>
-        </section>
 
-        <section class="cv-section" aria-labelledby="cv-title">
-            <h2 id="cv-title">Mon Curriculum Vitae</h2>
-            
-            <div class="cv-actions">
-                <a href="assets/cv/Assoumani_Moudjahidy_CV.pdf" download="Assoumani_Moudjahidy_CV.pdf" class="button primary-button">
-                    Télécharger le CV (PDF)
-                </a>
-                <p class="file-note">Dernière mise à jour : Novembre 2025</p>
+            <div class="stat-card">
+              <div class="stat-card-header">
+                <span class="stat-card-icon">🛡️</span>
+                <span class="stat-card-title">Cybersécurité</span>
+              </div>
+              <div class="stat-card-value">NAC</div>
+              <div class="stat-card-label">PacketFence · PurpleKnight · PingCastle</div>
+              <div class="skill-bar-container">
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="--target-width:75%;animation-delay:1s;background:linear-gradient(90deg,var(--neon-pink),var(--neon-violet))"></div>
+                </div>
+              </div>
             </div>
-            
-            <div class="cv-embed">
-                <h3 class="visually-hidden">Aperçu du CV</h3>
-                <object data="assets/cv/Assoumani_Moudjahidy_CV.pdf" type="application/pdf" width="100%" height="800px" aria-label="Visualiseur du Curriculum Vitae d'Assoumani Moudjahidy">
-                    <p>Votre navigateur ne supporte pas l'affichage de PDF intégré. Vous pouvez le <a href="assets/cv/Assoumani_Moudjahidy_CV.pdf" download="Assoumani_Moudjahidy_CV.pdf">télécharger ici</a>.</p>
-                </object>
-            </div>
-        </section>
-    </main>
 
-    <footer class="site-footer">
-        <div class="container">
-            <p>&copy; 2025 Assoumani Moudjahidy. Tous droits réservés.</p>
-            <div class="contact-info">
-                <p>📧 Email : <a href="mailto:moudjahidy1.assoumani@gmail.com">moudjahidy1.assoumani@gmail.com</a></p>
-                <p>📞 Tél : <a href="tel:+33744510759">+33 7 44 51 07 59</a></p>
-                <p>🔗 <a href="https://linkedin.com/in/assoumani-m" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+            <div class="stat-card">
+              <div class="stat-card-header">
+                <span class="stat-card-icon">⚙️</span>
+                <span class="stat-card-title">Automatisation</span>
+              </div>
+              <div class="stat-card-value">PS + Git</div>
+              <div class="stat-card-label">PowerShell · Scoop · GitLab CI</div>
+              <div class="skill-bar-container">
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="--target-width:80%;animation-delay:1.2s;background:linear-gradient(90deg,var(--neon-emerald),var(--neon-cyan))"></div>
+                </div>
+              </div>
             </div>
-            <a href="#presentation-title" class="back-to-top" aria-label="Retour en haut de page">↑ Haut de page</a>
+
+          </div>
         </div>
-    </footer>
+      </div>
+    </section>
+
+    <!-- ===== COMPÉTENCES ===== -->
+    <section class="profile-section" aria-labelledby="skills-title">
+      <div class="container">
+        <h2 class="section-heading" id="skills-title">
+          <span class="emoji-prefix">⚡</span>Mes Compétences
+        </h2>
+
+        <div class="skills-grid">
+
+          <div class="skill-category-card fade-up-1">
+            <div class="skill-cat-icon">🖧</div>
+            <div class="skill-cat-title">Infrastructure & Réseaux</div>
+            <div class="skill-tags">
+              <span class="tag tag-cyan">Proxmox</span>
+              <span class="tag tag-cyan">VMware</span>
+              <span class="tag tag-cyan">VLAN</span>
+              <span class="tag tag-cyan">Aruba 2930F</span>
+              <span class="tag tag-cyan">HP Comware</span>
+              <span class="tag tag-cyan">SNMPv3</span>
+            </div>
+          </div>
+
+          <div class="skill-category-card fade-up-2">
+            <div class="skill-cat-icon">🪟</div>
+            <div class="skill-cat-title">Systèmes & AD</div>
+            <div class="skill-tags">
+              <span class="tag tag-violet">Windows Server</span>
+              <span class="tag tag-violet">Samba-AD</span>
+              <span class="tag tag-violet">UCS</span>
+              <span class="tag tag-violet">Scribe-AD</span>
+              <span class="tag tag-violet">GPO</span>
+              <span class="tag tag-violet">DNS / DHCP</span>
+            </div>
+          </div>
+
+          <div class="skill-category-card fade-up-3">
+            <div class="skill-cat-icon">🛡️</div>
+            <div class="skill-cat-title">Sécurité & Audit</div>
+            <div class="skill-tags">
+              <span class="tag tag-pink">PacketFence v15</span>
+              <span class="tag tag-pink">PurpleKnight</span>
+              <span class="tag tag-pink">PingCastle</span>
+              <span class="tag tag-pink">SSL/TLS</span>
+              <span class="tag tag-pink">Remédiation AD</span>
+            </div>
+          </div>
+
+          <div class="skill-category-card fade-up-1">
+            <div class="skill-cat-icon">⚙️</div>
+            <div class="skill-cat-title">Automatisation & DevOps</div>
+            <div class="skill-tags">
+              <span class="tag tag-emerald">PowerShell</span>
+              <span class="tag tag-emerald">Scoop</span>
+              <span class="tag tag-emerald">GitLab</span>
+              <span class="tag tag-emerald">Bash</span>
+              <span class="tag tag-emerald">UnigetUI</span>
+            </div>
+          </div>
+
+          <div class="skill-category-card fade-up-2">
+            <div class="skill-cat-icon">🐧</div>
+            <div class="skill-cat-title">Linux & Services</div>
+            <div class="skill-tags">
+              <span class="tag tag-amber">Debian</span>
+              <span class="tag tag-amber">Apache2</span>
+              <span class="tag tag-amber">GLPI</span>
+              <span class="tag tag-amber">Centreon</span>
+              <span class="tag tag-amber">Stormshield</span>
+              <span class="tag tag-amber">LXC</span>
+            </div>
+          </div>
+
+          <div class="skill-category-card fade-up-3">
+            <div class="skill-cat-icon">📡</div>
+            <div class="skill-cat-title">Protocoles & Outils</div>
+            <div class="skill-tags">
+              <span class="tag tag-cyan">TCP/IP</span>
+              <span class="tag tag-cyan">RIP/OSPF</span>
+              <span class="tag tag-cyan">HSRP</span>
+              <span class="tag tag-cyan">Wireshark</span>
+              <span class="tag tag-cyan">Cisco IOS</span>
+              <span class="tag tag-cyan">IPv6</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CV ===== -->
+    <section class="cv-section" aria-labelledby="cv-title">
+      <div class="container">
+        <h2 class="section-heading" id="cv-title">
+          <span class="emoji-prefix">📄</span>Curriculum Vitae
+        </h2>
+
+        <div class="cv-actions">
+          <a href="assets/cv/Assoumani_Moudjahidy_CV.pdf" download="Assoumani_Moudjahidy_CV.pdf" class="button primary-button">
+            ↓ Télécharger le CV (PDF)
+          </a>
+          <span class="file-note">📅 Dernière mise à jour : Novembre 2025</span>
+        </div>
+
+        <div class="cv-embed">
+          <h3 class="visually-hidden">Aperçu du CV</h3>
+          <object data="assets/cv/Assoumani_Moudjahidy_CV.pdf" type="application/pdf" width="100%" height="800px" aria-label="CV Assoumani Moudjahidy">
+            <p>Votre navigateur ne supporte pas l'affichage PDF intégré.
+              <a href="assets/cv/Assoumani_Moudjahidy_CV.pdf" download>Téléchargez-le ici.</a>
+            </p>
+          </object>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p style="color:var(--text-muted);font-family:var(--font-mono);font-size:0.8rem;">&copy; 2025 Assoumani Moudjahidy</p>
+      <div class="footer-links">
+        <a href="mailto:moudjahidy1.assoumani@gmail.com">✉ moudjahidy1.assoumani@gmail.com</a>
+        <span class="footer-divider">|</span>
+        <a href="tel:+33744510759">📞 +33 7 44 51 07 59</a>
+        <span class="footer-divider">|</span>
+        <a href="https://linkedin.com/in/assoumani-m" target="_blank" rel="noopener noreferrer">🔗 LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#hero-name" class="back-to-top" aria-label="Retour en haut">↑</a>
+
 </body>
 </html>

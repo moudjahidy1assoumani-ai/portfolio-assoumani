@@ -1,107 +1,324 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projets - Assoumani Moudjahidy</title>
-    <meta name="description" content="Liste des projets réalisés en formation (M2L, CUB) et personnels.">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/projets.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projets — Assoumani Moudjahidy</title>
+  <meta name="description" content="Projets en formation (M2L, CUB) et stages professionnels de Assoumani Moudjahidy — BTS SIO SISR.">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/projets.css">
 </head>
 <body>
-    <header class="site-header">
-        <div class="container">
-            <h1><a href="index.html">Assoumani M. | Portfolio</a></h1>
-            <nav aria-label="Menu principal">
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="projets.html" aria-current="page">Projets</a></li>
-                    <li><a href="experience.html">Expériences</a></li>
-                    <li><a href="documentation.html">Documentation</a></li>
-                    <li><a href="veille.html">Ma Veille</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <main class="container">
-        <h2>📂 Mes Projets</h2>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container">
+      <h1><a href="index.html">Assoumani M. | Portfolio</a></h1>
+      <nav aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="projets.html" aria-current="page">Projets</a></li>
+          <li><a href="experience.html">Expériences</a></li>
+          <li><a href="documentation.html">Documentation</a></li>
+          <li><a href="veille.html">Ma Veille</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-        <nav class="project-tabs" aria-label="Catégories de projets">
-            <a href="#en-formation" class="tab-link active">En Formation</a>
-            <a href="#personnel" class="tab-link">Personnel</a>
-        </nav>
+  <main class="container">
 
-        <section id="en-formation" class="project-category" aria-labelledby="formation-title">
-            <h3 id="formation-title">Projets réalisés en Formation</h3>
+    <h2 class="section-heading" style="margin-top: var(--sp-md)">
+      <span class="emoji-prefix">📂</span>Mes Projets
+    </h2>
 
-            <article class="project-card">
-                <header>
-                    <h4>Première année — Projet M2L</h4>
-                    <span class="project-tag">Réseaux & Systèmes</span>
-                </header>
-                <div class="project-content">
-                    <h5>Résumé du contexte :</h5>
-                    <p>La <strong>Maison des Ligues de Lorraine (M2L)</strong> a pour rôle de mettre à disposition des locaux et des services pour les ligues sportives régionales ainsi que pour d'autres structures accueillies. Elle est financée par le Conseil Régional de Lorraine et gérée par le Comité Régional Olympique et Sportif de Lorraine (CROSL).</p>
-                    
-                    <h5>Travaux effectués :</h5>
-                    <ul>
-                        <li>Calcul de la longueur totale du câblage en fibre optique</li>
-                        <li>Élaboration d’un devis pour le matériel</li>
-                        <li>Réalisation d’un schéma de câblage pour un étage</li>
-                    </ul>
-                    
-                    <div class="project-actions">
-                        <a href="doc-m2l.html" class="button primary-button">
-                            Voir la documentation détaillée (Cahier des Charges)
-                        </a>
-                    </div>
-                </div>
-            </article>
+    <!-- TABS de navigation -->
+    <nav class="project-tabs" aria-label="Catégories de projets">
+      <a href="#en-formation" class="tab-link active">En Formation</a>
+      <a href="#projets-stage" class="tab-link">Projets de Stage</a>
+      <a href="#personnel" class="tab-link">Personnel</a>
+    </nav>
 
-            <article class="project-card">
-                <header>
-                    <h4>Deuxième année — Projet CUB</h4>
-                    <span class="project-tag">Virtualisation & DevOps</span>
-                </header>
-                <div class="project-content">
-                    <h5>Résumé du contexte :</h5>
-                    <p>Fondée en 2010, la société <strong>CUB</strong> se spécialise dans l’incubation de startups orientées vers la solidarité et le développement durable. Elle propose, via une plateforme en ligne, la location d’espaces de travail (réunions, formations, séminaires) et facilite la mise en relation entre entreprises disposant de bureaux vacants et celles en recherche de locaux, selon un modèle collaboratif BtoB.</p>
-                    <p>(… contenu complet fourni par l’utilisateur — inclure exactement)</p>
-                    
-                    <h5>Travaux effectués :</h5>
-                    <ul>
-                        <li>Mise en place d'un environnement virtualisé (Proxmox/VMware).</li>
-                        <li>Configuration des services réseau et systèmes (DNS, DHCP, Firewall, AD).</li>
-                        <li>Automatisation du déploiement (Ansible/Scripts).</li>
-                    </ul>
+    <!-- ============================================
+         SECTION 1 : EN FORMATION
+    ============================================ -->
+    <section id="en-formation" class="project-category" aria-labelledby="formation-title">
+      <h3 id="formation-title">🎓 Projets réalisés en Formation</h3>
 
-                    <div class="project-actions">
-                        <a href="doc-cub.html" class="button primary-button">
-                            Voir la documentation détaillée (Schémas & Systèmes)
-                        </a>
-                    </div>
-                </div>
-            </article>
-        </section>
+      <div class="project-grid">
 
-        <section id="personnel" class="project-category" aria-labelledby="personnel-title">
-            <h3 id="personnel-title">Projets Personnels</h3>
-            <p class="no-content">Aucun projet personnel majeur n'est encore documenté ici. Revenez bientôt !</p>
-        </section>
-    </main>
-
-    <footer class="site-footer">
-        <div class="container">
-            <p>&copy; 2025 Assoumani Moudjahidy. Tous droits réservés.</p>
-            <div class="contact-info">
-                <p>📧 Email : <a href="mailto:contact@exemple.com">moudjahidy1.assoumani@gmail.com</a></p>
-                <p>📞 Tél : <a href="tel:+33600000000">+33 7 44 51 07 59</a></p>
+        <!-- Carte M2L -->
+        <article class="project-card">
+          <header>
+            <h4>Première année — Projet M2L</h4>
+            <span class="project-tag reseaux">Réseaux</span>
+          </header>
+          <div class="project-content">
+            <h5>Contexte</h5>
+            <p>La <strong style="color:var(--text-white)">Maison des Ligues de Lorraine (M2L)</strong> met à disposition des locaux et services pour les ligues sportives régionales. Financée par le Conseil Régional de Lorraine et gérée par le CROSL.</p>
+            <h5>Travaux réalisés</h5>
+            <ul>
+              <li>Calcul de la longueur totale du câblage fibre optique</li>
+              <li>Élaboration d'un devis pour le matériel réseau</li>
+              <li>Réalisation d'un schéma de câblage par étage</li>
+            </ul>
+            <hr class="card-divider">
+            <div class="project-actions">
+              <a href="doc-m2l.html" class="button secondary-button">Voir la documentation →</a>
             </div>
-            <a href="#formation-title" class="back-to-top" aria-label="Retour à la liste des projets">↑ Haut</a>
-        </div>
-    </footer>
+          </div>
+        </article>
+
+        <!-- Carte CUB -->
+        <article class="project-card">
+          <header>
+            <h4>Deuxième année — Projet CUB</h4>
+            <span class="project-tag systemes">Virtualisation</span>
+          </header>
+          <div class="project-content">
+            <h5>Contexte</h5>
+            <p>La société <strong style="color:var(--text-white)">CUB</strong> (fondée en 2010) incube des startups solidaires et propose la location d'espaces de travail via une plateforme BtoB. Mise en place d'une infrastructure complète virtualisée.</p>
+            <h5>Travaux réalisés</h5>
+            <ul>
+              <li>Environnement virtualisé Proxmox / VMware</li>
+              <li>Configuration DNS, DHCP, Firewall Stormshield, AD</li>
+              <li>Supervision Centreon + gestion GLPI</li>
+            </ul>
+            <hr class="card-divider">
+            <div class="project-actions">
+              <a href="doc-cub.html" class="button secondary-button">Voir la documentation →</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 2 : PROJETS DE STAGE
+    ============================================ -->
+    <section id="projets-stage" class="project-category" aria-labelledby="stage-title">
+      <h3 id="stage-title">💼 Projets de Stage</h3>
+
+      <div class="project-grid">
+
+        <!-- ===== STAGE 1 ===== -->
+        <article class="project-card" style="--card-accent: var(--neon-emerald);">
+          <header>
+            <h4>Stage 1ère Année<br>Déploiement logiciel &amp; Automatisation</h4>
+            <span class="project-tag auto">Automatisation</span>
+          </header>
+          <div class="project-content">
+
+            <p class="stage-period">Mai — Juin 2025</p>
+
+            <h5>Mission</h5>
+            <p>Déploiement d'infrastructure logicielle via <strong style="color:var(--text-white)">Scoop &amp; GitLab</strong> sur environnement Proxmox avec automatisation PowerShell.</p>
+
+            <h5>Réalisations techniques</h5>
+            <ul>
+              <li>Mise en place d'un serveur <strong style="color:var(--text-white)">Proxmox</strong> avec VM clients Windows et serveur GitLab</li>
+              <li>Scripts <strong style="color:var(--text-white)">PowerShell</strong> pour l'automatisation du déploiement via Scoop</li>
+              <li>Environnement de pré-production &amp; synchronisation de buckets</li>
+              <li>Déploiement <strong style="color:var(--text-white)">UnigetUI</strong> pour l'autonomie des utilisateurs</li>
+            </ul>
+
+            <hr class="card-divider">
+
+            <!-- Accordéon docs Stage 1 -->
+            <div class="docs-accordion">
+
+              <div class="accordion-group">
+                <button class="accordion-trigger" aria-expanded="false" onclick="toggleAccordion(this)">
+                  📖 Ressources matérielles
+                  <span class="accordion-icon">▼</span>
+                </button>
+                <div class="accordion-content">
+                  <ul class="pdf-list">
+                    <li>
+                      <a href="assets/docs/stage1/os6250_aos_6.6.3_r01_hardware_users_guide.pdf" target="_blank">
+                        <span class="pdf-icon">📄</span>
+                        os6250_aos_6.6.3_r01_hardware_users_guide.pdf
+                      </a>
+                    </li>
+                    <li>
+                      <a href="assets/docs/stage1/reinitialisation_d_un_switch_alcatel-lucent_os6250-24.pdf" target="_blank">
+                        <span class="pdf-icon">📄</span>
+                        reinitialisation_d_un_switch_alcatel-lucent_os6250-24.pdf
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="accordion-group">
+                <button class="accordion-trigger" aria-expanded="false" onclick="toggleAccordion(this)">
+                  📝 Documentations réalisées
+                  <span class="accordion-icon">▼</span>
+                </button>
+                <div class="accordion-content">
+                  <ul class="pdf-list">
+                    <li><a href="assets/docs/stage1/installation_de_proxmox.pdf" target="_blank"><span class="pdf-icon">📄</span>installation_de_proxmox.pdf</a></li>
+                    <li><a href="assets/docs/stage1/creation-dun-serveur-gitlab.pdf" target="_blank"><span class="pdf-icon">📄</span>creation-dun-serveur-gitlab.pdf</a></li>
+                    <li><a href="assets/docs/stage1/creation_d_un_projet_sur_gitlab.pdf" target="_blank"><span class="pdf-icon">📄</span>creation_d_un_projet_sur_gitlab.pdf</a></li>
+                    <li><a href="assets/docs/stage1/installation_et_configuration_de_certificats_ssl_avec.pdf" target="_blank"><span class="pdf-icon">📄</span>installation_et_configuration_de_certificats_ssl_avec.pdf</a></li>
+                    <li><a href="assets/docs/stage1/realisation_de_l_automatisation.pdf" target="_blank"><span class="pdf-icon">📄</span>realisation_de_l_automatisation.pdf</a></li>
+                    <li><a href="assets/docs/stage1/scoop_annexe.pdf" target="_blank"><span class="pdf-icon">📄</span>scoop_annexe.pdf</a></li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+            <!-- fin accordéon -->
+
+          </div>
+        </article>
+
+        <!-- ===== STAGE 2 ===== -->
+        <article class="project-card">
+          <header>
+            <h4>Stage 2ème Année<br>NAC, Audit &amp; Sécurisation Réseau/AD</h4>
+            <span class="project-tag securite">Sécurité</span>
+          </header>
+          <div class="project-content">
+
+            <p class="stage-period" style="--dot-color: var(--neon-pink)">2ème année BTS SIO</p>
+
+            <h5>Mission</h5>
+            <p>Déploiement <strong style="color:var(--text-white)">PacketFence v15</strong>, pilotage réseau Aruba/HP, intégration Active Directory &amp; audits de sécurité complets.</p>
+
+            <h5>Réalisations techniques</h5>
+            <ul>
+              <li>Virtualisation <strong style="color:var(--text-white)">PacketFence v15</strong> sur Proxmox</li>
+              <li>Sécurisation <strong style="color:var(--text-white)">SNMPv3</strong> — architecture Aruba 2930F &amp; HP Comware v5</li>
+              <li>Jonction au domaine <strong style="color:var(--text-white)">Active Directory</strong> (Samba, UCS, Scribe, Windows Server)</li>
+              <li>Audits <strong style="color:var(--text-white)">Purple Knight</strong> &amp; <strong style="color:var(--text-white)">PingCastle</strong> + remédiation complète</li>
+            </ul>
+
+            <hr class="card-divider">
+
+            <!-- Accordéon docs Stage 2 -->
+            <div class="docs-accordion">
+
+              <div class="accordion-group">
+                <button class="accordion-trigger" aria-expanded="false" onclick="toggleAccordion(this)">
+                  🏗️ Infrastructures &amp; Active Directory
+                  <span class="accordion-icon">▼</span>
+                </button>
+                <div class="accordion-content">
+                  <ul class="pdf-list">
+                    <li><a href="assets/docs/stage2/mise_au_point_de_proxmox_a_partir_de_debian_13.pdf" target="_blank"><span class="pdf-icon">📄</span>mise_au_point_de_proxmox_a_partir_de_debian_13.pdf</a></li>
+                    <li><a href="assets/docs/stage2/montage_d_un_laboratoire_active_directory_sur_proxmox.pdf" target="_blank"><span class="pdf-icon">📄</span>montage_d_un_laboratoire_active_directory_sur_proxmox.pdf</a></li>
+                    <li><a href="assets/docs/stage2/deploiement_d_un_controleur_de_domaine_active_directory_avec_ucs.pdf" target="_blank"><span class="pdf-icon">📄</span>deploiement_d_un_controleur_de_domaine_active_directory_avec_ucs.pdf</a></li>
+                    <li><a href="assets/docs/stage2/documentation_technique_ad_dc_samba_4_sur_lxc_debian_13_1_.pdf" target="_blank"><span class="pdf-icon">📄</span>documentation_technique_ad_dc_samba_4_sur_lxc_debian_13.pdf</a></li>
+                    <li><a href="assets/docs/stage2/mise_en_œuvre_de_scribe_ad.pdf" target="_blank"><span class="pdf-icon">📄</span>mise_en_oeuvre_de_scribe_ad.pdf</a></li>
+                    <li><a href="assets/docs/stage2/mon_guide_gerer_la_cle_ventoy_et_l_espace_proxmox.pdf" target="_blank"><span class="pdf-icon">📄</span>mon_guide_gerer_la_cle_ventoy_et_l_espace_proxmox.pdf</a></li>
+                    <li><a href="assets/docs/stage2/configuration_ad_et_jonction_des_postes_1_.pdf" target="_blank"><span class="pdf-icon">📄</span>configuration_ad_et_jonction_des_postes.pdf</a></li>
+                    <li><a href="assets/docs/stage2/oradad.pdf" target="_blank"><span class="pdf-icon">📄</span>oradad.pdf</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="accordion-group">
+                <button class="accordion-trigger" aria-expanded="false" onclick="toggleAccordion(this)">
+                  🔍 Audits de Sécurité
+                  <span class="accordion-icon">▼</span>
+                </button>
+                <div class="accordion-content">
+                  <ul class="pdf-list">
+                    <li><a href="assets/docs/stage2/audit_de_securite_active_directory_avec_purple_knight_samba-ad.pdf" target="_blank"><span class="pdf-icon">📄</span>audit Purple Knight — Samba-AD</a></li>
+                    <li><a href="assets/docs/stage2/audit_de_securite_active_directory_avec_purple_knight_scribe-ad.pdf" target="_blank"><span class="pdf-icon">📄</span>audit Purple Knight — Scribe-AD</a></li>
+                    <li><a href="assets/docs/stage2/audit_de_securite_active_directory_avec_purple_knight_ucs-ad.pdf" target="_blank"><span class="pdf-icon">📄</span>audit Purple Knight — UCS-AD</a></li>
+                    <li><a href="assets/docs/stage2/audit_de_securite_active_directory_avec_purple_knight_win-serv.pdf" target="_blank"><span class="pdf-icon">📄</span>audit Purple Knight — Windows Server</a></li>
+                    <li><a href="assets/docs/stage2/audit_de_securite_active_directory_samba-ad_avec_pingcastle.pdf" target="_blank"><span class="pdf-icon">📄</span>audit PingCastle — Samba-AD</a></li>
+                    <li><a href="assets/docs/stage2/audit_de_securite_active_directory_scribe-ad_avec_pingcastle.pdf" target="_blank"><span class="pdf-icon">📄</span>audit PingCastle — Scribe-AD</a></li>
+                    <li><a href="assets/docs/stage2/audit_de_securite_active_directory_ucs-ad_avec_pingcastle.pdf" target="_blank"><span class="pdf-icon">📄</span>audit PingCastle — UCS-AD</a></li>
+                    <li><a href="assets/docs/stage2/audit_de_securite_active_directory_win-serv_avec_pingcastle.pdf" target="_blank"><span class="pdf-icon">📄</span>audit PingCastle — Windows Server</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="accordion-group">
+                <button class="accordion-trigger" aria-expanded="false" onclick="toggleAccordion(this)">
+                  🔧 Remédiations &amp; Réseau (PacketFence / Switch)
+                  <span class="accordion-icon">▼</span>
+                </button>
+                <div class="accordion-content">
+                  <ul class="pdf-list">
+                    <li><a href="assets/docs/stage2/remediation_securisation_de_l_annuaire_lab.local_samba_.pdf" target="_blank"><span class="pdf-icon">📄</span>remédiation Samba-AD</a></li>
+                    <li><a href="assets/docs/stage2/remediation_securisation_de_l_annuaire_lab.local_win_serv_.pdf" target="_blank"><span class="pdf-icon">📄</span>remédiation Windows Server</a></li>
+                    <li><a href="assets/docs/stage2/remediation_securisation_de_l_annuaire_scribe.local.pdf" target="_blank"><span class="pdf-icon">📄</span>remédiation Scribe-AD</a></li>
+                    <li><a href="assets/docs/stage2/remediation_technique_ucs_securisation_active_directory.pdf" target="_blank"><span class="pdf-icon">📄</span>remédiation UCS-AD</a></li>
+                    <li><a href="assets/docs/stage2/reinitialisation_et_securisation_switch_hp.pdf" target="_blank"><span class="pdf-icon">📄</span>réinitialisation &amp; sécurisation switch HP</a></li>
+                    <li><a href="assets/docs/stage2/configuration_switch_hp_et_proxmox.pdf" target="_blank"><span class="pdf-icon">📄</span>configuration switch HP &amp; Proxmox</a></li>
+                    <li><a href="assets/docs/stage2/installation_de_packetfence_sur_proxmox.pdf" target="_blank"><span class="pdf-icon">📄</span>installation PacketFence sur Proxmox</a></li>
+                    <li><a href="assets/docs/stage2/stabilisation_et_configuration_packetfence_v15.pdf" target="_blank"><span class="pdf-icon">📄</span>stabilisation &amp; configuration PacketFence v15</a></li>
+                    <li><a href="assets/docs/stage2/integration_active_directory_pf_.pdf" target="_blank"><span class="pdf-icon">📄</span>intégration Active Directory — PacketFence</a></li>
+                    <li><a href="assets/docs/stage2/depannage_packetfence_et_switch_hp.pdf" target="_blank"><span class="pdf-icon">📄</span>dépannage PacketFence &amp; switch HP</a></li>
+                    <li><a href="assets/docs/stage2/aruba_packetfence_vlan_integration_.pdf" target="_blank"><span class="pdf-icon">📄</span>Aruba — PacketFence VLAN integration</a></li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+            <!-- fin accordéon stage 2 -->
+
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 3 : PERSONNEL
+    ============================================ -->
+    <section id="personnel" class="project-category" aria-labelledby="personnel-title">
+      <h3 id="personnel-title">🚀 Projets Personnels</h3>
+      <p class="no-content">Aucun projet personnel majeur documenté pour le moment — revenez bientôt !</p>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p style="color:var(--text-muted);font-family:var(--font-mono);font-size:0.8rem;">&copy; 2025 Assoumani Moudjahidy</p>
+      <div class="footer-links">
+        <a href="mailto:moudjahidy1.assoumani@gmail.com">✉ moudjahidy1.assoumani@gmail.com</a>
+        <span class="footer-divider">|</span>
+        <a href="tel:+33744510759">📞 +33 7 44 51 07 59</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#formation-title" class="back-to-top" aria-label="Retour en haut">↑</a>
+
+  <!-- Script accordéon léger -->
+  <script>
+    function toggleAccordion(btn) {
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      // Fermer tous les accordéons du même groupe parent
+      const parentCard = btn.closest('.docs-accordion');
+      parentCard.querySelectorAll('.accordion-trigger').forEach(b => {
+        b.setAttribute('aria-expanded', 'false');
+        b.nextElementSibling.classList.remove('open');
+      });
+      // Ouvrir si c'était fermé
+      if (!expanded) {
+        btn.setAttribute('aria-expanded', 'true');
+        btn.nextElementSibling.classList.add('open');
+      }
+    }
+
+    // Smooth scroll pour les tabs
+    document.querySelectorAll('.tab-link').forEach(link => {
+      link.addEventListener('click', function(e) {
+        document.querySelectorAll('.tab-link').forEach(l => l.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+  </script>
+
 </body>
 </html>
