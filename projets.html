@@ -27,7 +27,8 @@
     </div>
   </header>
 
-  <main class="container">
+  <main>
+  <div class="container">
 
     <h2 class="section-heading" style="margin-top: 0">
       <span class="emoji-prefix">📂</span>Mes Projets
@@ -278,6 +279,7 @@
       <p class="no-content">Aucun projet personnel majeur documenté pour le moment — revenez bientôt !</p>
     </section>
 
+  </div><!-- /.container -->
   </main>
 
   <!-- FOOTER -->
@@ -294,22 +296,35 @@
 
   <a href="#formation-title" class="back-to-top" aria-label="Retour en haut">↑</a>
 
-  <!-- Script accordéon léger -->
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  <script>
     function toggleAccordion(btn) {
-      const expanded = btn.getAttribute('aria-expanded') === 'true';
-      // Fermer tous les accordéons du même groupe parent
-      const parentCard = btn.closest('.docs-accordion');
-      parentCard.querySelectorAll('.accordion-trigger').forEach(b => {
-        b.setAttribute('aria-expanded', 'false');
-        b.nextElementSibling.classList.remove('open');
+      var group = btn.parentElement;
+      var content = group.querySelector('.accordion-content');
+      var isOpen = content.classList.contains('open');
+
+      // Fermer tous les accordéons de la même carte
+      var parentAccordion = btn.closest('.docs-accordion');
+      parentAccordion.querySelectorAll('.accordion-content').forEach(function(c) {
+        c.classList.remove('open');
       });
-      // Ouvrir si c'était fermé
-      if (!expanded) {
+      parentAccordion.querySelectorAll('.accordion-trigger').forEach(function(b) {
+        b.setAttribute('aria-expanded', 'false');
+      });
+
+      // Ouvrir celui-ci s'il était fermé
+      if (!isOpen) {
+        content.classList.add('open');
         btn.setAttribute('aria-expanded', 'true');
-        btn.nextElementSibling.classList.add('open');
       }
     }
 
-    // Smooth scroll pour les tabs
-    document.querySel
+    // Smooth scroll + état actif pour les tabs
+    document.querySelectorAll('.tab-link').forEach(function(link) {
+      link.addEventListener('click', function() {
+        document.querySelectorAll('.tab-link').forEach(function(l) { l.classList.remove('active'); });
+        this.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
