@@ -92,13 +92,33 @@
 
     <footer class="site-footer">
         <div class="container">
-            <p>&copy; 2025 Assoumani Moudjahidy. Tous droits réservés.</p>
-            <div class="contact-info">
-                <p>📧 Email : <a href="mailto:contact@exemple.com">moudjahidy1.assoumani@gmail.com</a></p>
-                <p>📞 Tél : <a href="tel:+33600000000">+33 7 44 51 07 59</a></p>
+            <p style="color:var(--text-muted);font-family:var(--font-mono);font-size:0.8rem;">&copy; 2025 Assoumani Moudjahidy</p>
+            <div class="footer-links">
+                <a href="mailto:moudjahidy1.assoumani@gmail.com">✉ moudjahidy1.assoumani@gmail.com</a>
+                <span class="footer-divider">|</span>
+                <a href="tel:+33744510759">📞 +33 7 44 51 07 59</a>
+                <span class="footer-divider">|</span>
+                <a href="https://linkedin.com/in/moudjahidy-ass" target="_blank" rel="noopener noreferrer">🔗 LinkedIn</a>
             </div>
-            <a href="#veille-objectifs" class="back-to-top" aria-label="Retour à la description de la veille">↑ Haut</a>
         </div>
     </footer>
+
+    <a href="#" class="back-to-top" aria-label="Retour en haut de page">↑</a>
+    <button class="theme-toggle" id="themeToggle" aria-label="Basculer thème" title="Thème clair / sombre">🌙</button>
+    <script>
+        (function() {
+            var root = document.documentElement;
+            var btn  = document.getElementById('themeToggle');
+            var saved = localStorage.getItem('am-theme') || 'dark';
+            root.setAttribute('data-theme', saved);
+            btn.textContent = saved === 'dark' ? '☀️' : '🌙';
+            btn.addEventListener('click', function() {
+                var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+                root.setAttribute('data-theme', next);
+                localStorage.setItem('am-theme', next);
+                btn.textContent = next === 'dark' ? '☀️' : '🌙';
+            });
+        })();
+    </script>
 </body>
 </html>

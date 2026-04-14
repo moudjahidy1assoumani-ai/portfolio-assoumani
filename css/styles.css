@@ -73,8 +73,8 @@ body, .site-header, .experience-card, .skill-category-card, .stat-card,
 /* ===== BOUTON THÈME ===== */
 .theme-toggle {
   position: fixed;
-  top: 14px;
-  left: 16px;
+  bottom: 24px; /* Fixé en bas */
+  left: 24px;   /* Fixé à gauche */
   z-index: 1200;
   background: var(--bg-card);
   border: 1px solid rgba(0,217,255,0.25);
@@ -124,7 +124,7 @@ h3 { font-size: 1.5rem; }
 h4 { font-size: 1.2rem; }
 p  { margin-bottom: var(--sp-sm); color: var(--text-secondary); }
 a  { color: var(--neon-cyan); text-decoration: none; transition: all 0.25s ease; }
-a:hover { color: #ffffff; }
+a:hover { color: var(--text-white); } /* Corrigé ici pour le thème clair */
 a:focus, button:focus { outline: 2px solid var(--neon-cyan); outline-offset: 3px; }
 
 .section-heading {
