@@ -73,8 +73,8 @@ body, .site-header, .experience-card, .skill-category-card, .stat-card,
 /* ===== BOUTON THÈME ===== */
 .theme-toggle {
   position: fixed;
-  bottom: 24px; /* Fixé en bas */
-  left: 24px;   /* Fixé à gauche */
+  bottom: 24px;
+  left: 24px;
   z-index: 1200;
   background: var(--bg-card);
   border: 1px solid rgba(0,217,255,0.25);
@@ -124,7 +124,7 @@ h3 { font-size: 1.5rem; }
 h4 { font-size: 1.2rem; }
 p  { margin-bottom: var(--sp-sm); color: var(--text-secondary); }
 a  { color: var(--neon-cyan); text-decoration: none; transition: all 0.25s ease; }
-a:hover { color: var(--text-white); } /* Corrigé ici pour le thème clair */
+a:hover { color: var(--text-white); }
 a:focus, button:focus { outline: 2px solid var(--neon-cyan); outline-offset: 3px; }
 
 .section-heading {
@@ -283,14 +283,40 @@ nav a[aria-current="page"] { color: var(--neon-cyan); background: rgba(0,217,255
 .placeholder-item { color: var(--text-muted); font-style: italic; }
 .tool-link.placeholder { color: var(--text-secondary); text-decoration: underline; font-style: italic; }
 
-/* DARK PAGE */
-.page-header.dark-bg { background: linear-gradient(to bottom, var(--bg-deep), var(--bg-base)); border-bottom: 1px solid rgba(0,217,255,0.12); color: var(--text-primary); padding: 30px 0; text-align: center; margin-top: -80px; padding-top: 110px; }
-.page-header.dark-bg h2 { color: var(--neon-cyan); border-bottom: none; margin-bottom: 5px; }
-.dark-page-body { background-color: var(--bg-base); color: var(--text-primary); }
-.dark-page-body h1,.dark-page-body h2,.dark-page-body h3,.dark-page-body h4,.dark-page-body h5,.dark-page-body h6 { color: var(--text-white); }
-.dark-page-body .site-header { background: rgba(6,13,26,0.95); border-bottom-color: rgba(0,217,255,0.12); }
-.dark-page-body .site-header a, .dark-page-body .site-header h1 a { color: var(--text-white); }
-.dark-page-body a { color: var(--neon-cyan); }
+
+/* ===== DARK PAGE / SOUS-PAGES (CORRIGÉ) ===== */
+.page-header.dark-bg {
+  background: linear-gradient(to bottom, var(--bg-deep), var(--bg-base));
+  border-bottom: 1px solid rgba(0,217,255,0.12);
+  color: var(--text-primary);
+  padding: 30px 0;
+  text-align: center;
+  margin-top: -80px;
+  padding-top: 110px;
+}
+[data-theme="light"] .page-header.dark-bg {
+  border-bottom-color: rgba(2,132,199,0.15);
+}
+.page-header.dark-bg h2 {
+  color: var(--neon-cyan);
+  border-bottom: none;
+  margin-bottom: 5px;
+}
+
+/* On garde uniquement les bases pour le corps de la page, sans forcer les couleurs du header */
+.dark-page-body {
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+}
+.dark-page-body h1, .dark-page-body h2, .dark-page-body h3, .dark-page-body h4, .dark-page-body h5, .dark-page-body h6 {
+  color: var(--text-white);
+}
+.dark-page-body a {
+  color: var(--neon-cyan);
+}
+.dark-page-body a:hover {
+  color: var(--text-white);
+}
 
 /* ANIMATIONS */
 @keyframes fade-up { from { opacity:0; transform:translateY(24px); } to { opacity:1; transform:translateY(0); } }
