@@ -91,7 +91,26 @@
         <div class="container">
             <p>&copy; 2025 Assoumani Moudjahidy. Tous droits réservés.</p>
             <div class="contact-info">
-                <p>📧 Email : <a href="/cdn-cgi/l/email-protection#6b0804051f0a081f2b0e130e061b070e45080406"><span class="__cf_email__" data-cfemail="3b56544e5f515a53525f420a155a4848544e565a55527b5c565a525715585456">[email&#160;protected]</span></a></p>
+                <p>📧 Email : <a href="mailto:moudjahidy1.assoumani@gmail.com">✉ moudjahidy1.assoumani@gmail.com</a></p>
                 <p>📞 Tél : <a href="tel:+33600000000">+33 7 44 51 07 59</a></p>
             </div>
             <a href="#
+  <!-- Bouton thème clair/sombre -->
+  <button class="theme-toggle" id="themeToggle" aria-label="Basculer le thème" title="Changer le thème">🌙</button>
+  <script>
+    (function() {
+      var btn = document.getElementById('themeToggle');
+      var saved = localStorage.getItem('theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', saved);
+      btn.textContent = saved === 'dark' ? '☀️' : '🌙';
+      btn.addEventListener('click', function() {
+        var current = document.documentElement.getAttribute('data-theme');
+        var next = current === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+        btn.textContent = next === 'dark' ? '☀️' : '🌙';
+      });
+    })();
+  </script>
+</body>
+</html>

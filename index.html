@@ -240,12 +240,23 @@
         <span class="footer-divider">|</span>
         <a href="tel:+33744510759">📞 +33 7 44 51 07 59</a>
         <span class="footer-divider">|</span>
-        <a href="https://linkedin.com/in/assoumani-m" target="_blank" rel="noopener noreferrer">🔗 LinkedIn</a>
-      </div>
-    </div>
-  </footer>
-
-  <a href="#hero-name" class="back-to-top" aria-label="Retour en haut">↑</a>
-
+        <a href="https://linkedin.com/in/assoumani-m" target="_blank" rel="noopener nore
+  <!-- Bouton thème clair/sombre -->
+  <button class="theme-toggle" id="themeToggle" aria-label="Basculer le thème" title="Changer le thème">🌙</button>
+  <script>
+    (function() {
+      var btn = document.getElementById('themeToggle');
+      var saved = localStorage.getItem('theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', saved);
+      btn.textContent = saved === 'dark' ? '☀️' : '🌙';
+      btn.addEventListener('click', function() {
+        var current = document.documentElement.getAttribute('data-theme');
+        var next = current === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+        btn.textContent = next === 'dark' ? '☀️' : '🌙';
+      });
+    })();
+  </script>
 </body>
 </html>
