@@ -85,11 +85,28 @@
         <div class="container">
             <p>&copy; 2025 Assoumani Moudjahidy. Tous droits réservés.</p>
             <div class="contact-info">
-                <p>📧 Email : <a href="mailto:contact@exemple.com">moudjahidy1.assoumani@gmail.com</a></p>
-                <p>📞 Tél : <a href="tel:+33600000000">+33 7 44 51 07 59</a></p>
-            </div>
-            <a href="#m2l-docs-list" class="back-to-top" aria-label="Retour en haut de page">↑ Haut</a>
+                <p>📧 Email : <a href="mailto:moudjahidy1.assoumani@gmail.com">✉ moudjahidy1.assoumani@gmail.com</a>
+            </p>
         </div>
-    </footer>
+    </div>
+  </footer>
+
+  <!-- ===== BOUTON THÈME ===== -->
+  <button class="theme-toggle" id="themeToggle" aria-label="Basculer thème" title="Thème clair / sombre">🌙</button>
+  <script>
+    (function() {
+      var root = document.documentElement;
+      var btn  = document.getElementById('themeToggle');
+      var saved = localStorage.getItem('am-theme') || 'dark';
+      root.setAttribute('data-theme', saved);
+      btn.textContent = saved === 'dark' ? '☀️' : '🌙';
+      btn.addEventListener('click', function() {
+        var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', next);
+        localStorage.setItem('am-theme', next);
+        btn.textContent = next === 'dark' ? '☀️' : '🌙';
+      });
+    })();
+  </script>
 </body>
 </html>

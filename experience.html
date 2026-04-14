@@ -96,7 +96,6 @@
             </div>
             <a href="#
   <!-- Bouton thème clair/sombre -->
-  <button class="theme-toggle" id="themeToggle" aria-label="Basculer le thème" title="Changer le thème">🌙</button>
   <script>
     (function() {
       var btn = document.getElementById('themeToggle');
@@ -105,9 +104,19 @@
       btn.textContent = saved === 'dark' ? '☀️' : '🌙';
       btn.addEventListener('click', function() {
         var current = document.documentElement.getAttribute('data-theme');
-        var next = current === 'dark' ? 'light' : 'dark';
-        document.documentElement.setAttribute('data-theme', next);
-        localStorage.setItem('theme', next);
+  <!-- ===== BOUTON THÈME ===== -->
+  <button class="theme-toggle" id="themeToggle" aria-label="Basculer thème" title="Thème clair / sombre">🌙</button>
+  <script>
+    (function() {
+      var root = document.documentElement;
+      var btn  = document.getElementById('themeToggle');
+      var saved = localStorage.getItem('am-theme') || 'dark';
+      root.setAttribute('data-theme', saved);
+      btn.textContent = saved === 'dark' ? '☀️' : '🌙';
+      btn.addEventListener('click', function() {
+        var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', next);
+        localStorage.setItem('am-theme', next);
         btn.textContent = next === 'dark' ? '☀️' : '🌙';
       });
     })();

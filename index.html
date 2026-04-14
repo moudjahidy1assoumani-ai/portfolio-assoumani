@@ -10,7 +10,6 @@
 </head>
 <body>
 
-  <!-- HEADER -->
   <header class="site-header">
     <div class="container">
       <h1><a href="index.html">Assoumani M. | Portfolio</a></h1>
@@ -28,12 +27,10 @@
 
   <main>
 
-    <!-- ===== HERO ===== -->
     <section class="hero-section" aria-labelledby="hero-name">
       <div class="container">
         <div class="hero-inner">
 
-          <!-- Texte gauche -->
           <div class="hero-text">
             <div class="hero-status">
               <span class="status-dot"></span>
@@ -50,8 +47,7 @@
             <p class="hero-desc">
               Étudiant passionné en <strong style="color:var(--text-white)">BTS SIO option SISR</strong>,
               je conçois des infrastructures robustes, automatise des déploiements complexes
-              et sécurise des environnements Active Directory. 
-              Admis à l'ESIGELEC Poitiers, parcours BIG DATA & IA en alternance.  Bac général — spécialités
+              et sécurise des environnements Active Directory. Bac général mention — spécialités
               <strong style="color:var(--neon-cyan)">Maths</strong> &amp;
               <strong style="color:var(--neon-cyan)">NSI</strong>.
             </p>
@@ -61,12 +57,11 @@
                 ↓ Télécharger CV
               </a>
               <a href="projets.html" class="button secondary-button">
-                Voir mes projets →
+                Voir mes projects →
               </a>
             </div>
           </div>
 
-          <!-- Panel stats droite (style fiche joueur) -->
           <div class="hero-stats-panel" aria-hidden="true">
 
             <div class="stat-card">
@@ -75,7 +70,7 @@
                 <span class="stat-card-title">Réseaux & Systèmes</span>
               </div>
               <div class="stat-card-value">2+</div>
-              <div class="stat-card-label">Années en étude IT</div>
+              <div class="stat-card-label">Années en infrastructure IT</div>
               <div class="skill-bar-container">
                 <div class="skill-bar-track">
                   <div class="skill-bar-fill" style="--target-width:85%;animation-delay:0.8s"></div>
@@ -116,7 +111,6 @@
       </div>
     </section>
 
-    <!-- ===== COMPÉTENCES ===== -->
     <section class="profile-section" aria-labelledby="skills-title">
       <div class="container">
         <h2 class="section-heading" id="skills-title">
@@ -205,7 +199,6 @@
       </div>
     </section>
 
-    <!-- ===== CV ===== -->
     <section class="cv-section" aria-labelledby="cv-title">
       <div class="container">
         <h2 class="section-heading" id="cv-title">
@@ -216,7 +209,7 @@
           <a href="assets/cv/Assoumani_Moudjahidy_CV.pdf" download="Assoumani_Moudjahidy_CV.pdf" class="button primary-button">
             ↓ Télécharger le CV (PDF)
           </a>
-          <span class="file-note">📅 Dernière mise à jour : Avril 2026</span>
+          <span class="file-note">📅 Dernière mise à jour : Novembre 2025</span>
         </div>
 
         <div class="cv-embed">
@@ -232,7 +225,6 @@
 
   </main>
 
-  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container">
       <p style="color:var(--text-muted);font-family:var(--font-mono);font-size:0.8rem;">&copy; 2025 Assoumani Moudjahidy</p>
@@ -241,20 +233,23 @@
         <span class="footer-divider">|</span>
         <a href="tel:+33744510759">📞 +33 7 44 51 07 59</a>
         <span class="footer-divider">|</span>
-        <a href="https://linkedin.com/in/assoumani-m" target="_blank" rel="noopener nore
-  <!-- Bouton thème clair/sombre -->
-  <button class="theme-toggle" id="themeToggle" aria-label="Basculer le thème" title="Changer le thème">🌙</button>
+        <a href="https://linkedin.com/in/moudjahidy-ass" target="_blank" rel="noopener noreferrer">🔗 LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="theme-toggle" id="themeToggle" aria-label="Basculer thème" title="Thème clair / sombre">🌙</button>
   <script>
     (function() {
-      var btn = document.getElementById('themeToggle');
-      var saved = localStorage.getItem('theme') || 'dark';
-      document.documentElement.setAttribute('data-theme', saved);
+      var root = document.documentElement;
+      var btn  = document.getElementById('themeToggle');
+      var saved = localStorage.getItem('am-theme') || 'dark';
+      root.setAttribute('data-theme', saved);
       btn.textContent = saved === 'dark' ? '☀️' : '🌙';
       btn.addEventListener('click', function() {
-        var current = document.documentElement.getAttribute('data-theme');
-        var next = current === 'dark' ? 'light' : 'dark';
-        document.documentElement.setAttribute('data-theme', next);
-        localStorage.setItem('theme', next);
+        var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', next);
+        localStorage.setItem('am-theme', next);
         btn.textContent = next === 'dark' ? '☀️' : '🌙';
       });
     })();

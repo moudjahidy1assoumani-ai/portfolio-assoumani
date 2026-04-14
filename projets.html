@@ -11,7 +11,6 @@
 </head>
 <body>
 
-  <!-- HEADER -->
   <header class="site-header">
     <div class="container">
       <h1><a href="index.html">Assoumani M. | Portfolio</a></h1>
@@ -34,22 +33,17 @@
       <span class="emoji-prefix">📂</span>Mes Projets
     </h2>
 
-    <!-- TABS de navigation -->
     <nav class="project-tabs" aria-label="Catégories de projets">
       <a href="#en-formation" class="tab-link active">En Formation</a>
       <a href="#projets-stage" class="tab-link">Projets de Stage</a>
       <a href="#personnel" class="tab-link">Personnel</a>
     </nav>
 
-    <!-- ============================================
-         SECTION 1 : EN FORMATION
-    ============================================ -->
     <section id="en-formation" class="project-category" aria-labelledby="formation-title">
       <h3 id="formation-title">🎓 Projets réalisés en Formation</h3>
 
       <div class="project-grid">
 
-        <!-- Carte M2L -->
         <article class="project-card">
           <header>
             <h4>Première année — Projet M2L</h4>
@@ -71,7 +65,6 @@
           </div>
         </article>
 
-        <!-- Carte CUB -->
         <article class="project-card">
           <header>
             <h4>Deuxième année — Projet CUB</h4>
@@ -96,15 +89,11 @@
       </div>
     </section>
 
-    <!-- ============================================
-         SECTION 2 : PROJETS DE STAGE
-    ============================================ -->
     <section id="projets-stage" class="project-category" aria-labelledby="stage-title">
       <h3 id="stage-title">💼 Projets de Stage</h3>
 
       <div class="project-grid">
 
-        <!-- ===== STAGE 1 ===== -->
         <article class="project-card" style="--card-accent: var(--neon-emerald);">
           <header>
             <h4>Stage 1ère Année<br>Déploiement logiciel &amp; Automatisation</h4>
@@ -127,7 +116,6 @@
 
             <hr class="card-divider">
 
-            <!-- Accordéon docs Stage 1 -->
             <div class="docs-accordion">
 
               <div class="accordion-group">
@@ -171,12 +159,9 @@
               </div>
 
             </div>
-            <!-- fin accordéon -->
-
-          </div>
+            </div>
         </article>
 
-        <!-- ===== STAGE 2 ===== -->
         <article class="project-card">
           <header>
             <h4>Stage 2ème Année<br>NAC, Audit &amp; Sécurisation Réseau/AD</h4>
@@ -199,7 +184,6 @@
 
             <hr class="card-divider">
 
-            <!-- Accordéon docs Stage 2 -->
             <div class="docs-accordion">
 
               <div class="accordion-group">
@@ -263,26 +247,19 @@
               </div>
 
             </div>
-            <!-- fin accordéon stage 2 -->
-
-          </div>
+            </div>
         </article>
 
       </div>
     </section>
 
-    <!-- ============================================
-         SECTION 3 : PERSONNEL
-    ============================================ -->
     <section id="personnel" class="project-category" aria-labelledby="personnel-title">
       <h3 id="personnel-title">🚀 Projets Personnels</h3>
       <p class="no-content">Aucun projet personnel majeur documenté pour le moment — revenez bientôt !</p>
     </section>
 
-  </div><!-- /.container -->
-  </main>
+  </div></main>
 
-  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container">
       <p style="color:var(--text-muted);font-family:var(--font-mono);font-size:0.8rem;">&copy; 2025 Assoumani Moudjahidy</p>
@@ -290,6 +267,8 @@
         <a href="mailto:moudjahidy1.assoumani@gmail.com">✉ moudjahidy1.assoumani@gmail.com</a>
         <span class="footer-divider">|</span>
         <a href="tel:+33744510759">📞 +33 7 44 51 07 59</a>
+        <span class="footer-divider">|</span>
+        <a href="https://linkedin.com/in/moudjahidy-ass" target="_blank" rel="noopener noreferrer">🔗 LinkedIn</a>
       </div>
     </div>
   </footer>
@@ -327,20 +306,18 @@
     });
   </script>
 
-  <!-- Bouton thème clair/sombre -->
-  <button class="theme-toggle" id="themeToggle" aria-label="Basculer le thème" title="Changer le thème">🌙</button>
-
+  <button class="theme-toggle" id="themeToggle" aria-label="Basculer thème" title="Thème clair / sombre">🌙</button>
   <script>
     (function() {
-      var btn = document.getElementById('themeToggle');
-      var saved = localStorage.getItem('theme') || 'dark';
-      document.documentElement.setAttribute('data-theme', saved);
+      var root = document.documentElement;
+      var btn  = document.getElementById('themeToggle');
+      var saved = localStorage.getItem('am-theme') || 'dark';
+      root.setAttribute('data-theme', saved);
       btn.textContent = saved === 'dark' ? '☀️' : '🌙';
       btn.addEventListener('click', function() {
-        var current = document.documentElement.getAttribute('data-theme');
-        var next = current === 'dark' ? 'light' : 'dark';
-        document.documentElement.setAttribute('data-theme', next);
-        localStorage.setItem('theme', next);
+        var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', next);
+        localStorage.setItem('am-theme', next);
         btn.textContent = next === 'dark' ? '☀️' : '🌙';
       });
     })();
