@@ -348,3 +348,71 @@ nav a[aria-current="page"] { color: var(--neon-cyan); background: rgba(0,217,255
 }
 
 .visually-hidden { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+
+/* ===== TABLEAU DE SYNTHESE E4 ===== */
+.synthesis-section {
+  padding: var(--sp-xl) 0;
+  overflow-x: auto; /* Permet le défilement sur mobile */
+}
+
+.synthesis-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--bg-card);
+  border: 1px solid rgba(0, 217, 255, 0.2);
+  font-size: 0.85rem;
+  color: var(--text-primary);
+}
+
+.synthesis-table th, .synthesis-table td {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  text-align: center;
+}
+
+[data-theme="light"] .synthesis-table th, 
+[data-theme="light"] .synthesis-table td {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.synthesis-table thead th {
+  background: rgba(0, 217, 255, 0.05);
+  color: var(--neon-cyan);
+  font-family: var(--font-mono);
+  font-weight: 600;
+  vertical-align: bottom;
+}
+
+/* Rotation des titres de colonnes compétences */
+.vertical-text {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  white-space: nowrap;
+  padding: 15px 5px !important;
+  height: 250px;
+  text-align: left;
+  font-size: 0.75rem;
+  line-height: 1.2;
+}
+
+.category-row {
+  background: rgba(124, 58, 237, 0.1);
+  font-weight: 700;
+  text-align: left !important;
+  color: var(--text-white);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.project-name {
+  text-align: left !important;
+  font-weight: 600;
+  color: var(--text-white);
+  width: 300px;
+}
+
+.check-mark {
+  color: var(--neon-emerald);
+  font-weight: 800;
+  font-size: 1.2rem;
+}
