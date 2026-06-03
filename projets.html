@@ -27,294 +27,276 @@
   </header>
 
   <main>
-  <div class="container">
+    <div class="container">
 
-    <h2 class="section-heading" style="margin-top: 0">
-      <span class="emoji-prefix">📂</span>Mes Projets
-    </h2>
+      <h2 class="section-heading" style="margin-top: 0">
+        <span class="emoji-prefix">📂</span>Mes Projets
+      </h2>
 
-    <nav class="project-tabs" aria-label="Catégories de projets">
-      <a href="#en-formation" class="tab-link active">En Formation</a>
-      <a href="#projets-stage" class="tab-link">Projets de Stage</a>
-      <a href="#personnel" class="tab-link">Personnel</a>
-    </nav>
+      <nav class="project-tabs" aria-label="Catégories de projets">
+        <a href="#en-formation" class="tab-link active">En Formation</a>
+        <a href="#projets-stage" class="tab-link">Projets de Stage</a>
+        <a href="#personnel" class="tab-link">Personnel</a>
+      </nav>
 
-    <section id="en-formation" class="project-category" aria-labelledby="formation-title">
-      <h3 id="formation-title">🎓 Projets réalisés en Formation</h3>
+      <!-- SECTIONS : FORMATION -->
+      <section id="en-formation" class="project-category" aria-labelledby="formation-title">
+        <h3 id="formation-title">🎓 Projets réalisés en Formation</h3>
 
-      <div class="project-grid">
+        <div class="project-grid">
 
-        <article class="project-card">
-          <header>
-            <h4>Première année — Projet M2L</h4>
-            <span class="project-tag reseaux">Réseaux</span>
-          </header>
-          <div class="project-content">
-            <h5>Contexte</h5>
-            <p>La <strong style="color:var(--text-white)">Maison des Ligues de Lorraine (M2L)</strong> met à disposition des locaux et services pour les ligues sportives régionales. Financée par le Conseil Régional de Lorraine et gérée par le CROSL.</p>
-            <h5>Travaux réalisés</h5>
-            <ul>
-              <li>Calcul de la longueur totale du câblage fibre optique</li>
-              <li>Élaboration d'un devis pour le matériel réseau</li>
-              <li>Réalisation d'un schéma de câblage par étage</li>
-            </ul>
-            <hr class="card-divider">
-            <div class="project-actions">
-              <a href="doc-m2l.html" class="button secondary-button">Voir la documentation →</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <header>
-            <h4>Deuxième année — Projet CUB</h4>
-            <span class="project-tag systemes">Virtualisation</span>
-          </header>
-          <div class="project-content">
-            <h5>Contexte</h5>
-            <p>La société <strong style="color:var(--text-white)">CUB</strong> (fondée en 2010) incube des startups solidaires et propose la location d'espaces de travail via une plateforme BtoB. Mise en place d'une infrastructure complète virtualisée.</p>
-            <h5>Travaux réalisés</h5>
-            <ul>
-              <li>Environnement virtualisé Proxmox / VMware</li>
-              <li>Configuration DNS, DHCP, Firewall Stormshield, AD</li>
-              <li>Supervision Centreon + gestion GLPI</li>
-            </ul>
-            <hr class="card-divider">
-            <div class="project-actions">
-              <a href="doc-cub.html" class="button secondary-button">Voir la documentation →</a>
-            </div>
-          </div>
-        </article>
-
-      </div>
-    </section>
-
-    <section id="projets-stage" class="project-category" aria-labelledby="stage-title">
-      <h3 id="stage-title">💼 Projets de Stage</h3>
-
-      <div class="project-grid">
-
-        <article class="project-card" style="--card-accent: var(--neon-emerald);">
-          <header>
-            <h4>Stage 1ère Année<br>Déploiement logiciel &amp; Automatisation</h4>
-            <span class="project-tag auto">Automatisation</span>
-          </header>
-          <div class="project-content">
-
-            <p class="stage-period">Mai — Juin 2025</p>
-
-            <h5>Mission</h5>
-            <p>Déploiement d'infrastructure logicielle via <strong style="color:var(--text-white)">Scoop &amp; GitLab</strong> sur environnement Proxmox avec automatisation PowerShell.</p>
-
-            <h5>Réalisations techniques</h5>
-            <ul>
-              <li>Mise en place d'un serveur <strong style="color:var(--text-white)">Proxmox</strong> avec VM clients Windows et serveur GitLab</li>
-              <li>Scripts <strong style="color:var(--text-white)">PowerShell</strong> pour l'automatisation du déploiement via Scoop</li>
-              <li>Environnement de pré-production &amp; synchronisation de buckets</li>
-              <li>Déploiement <strong style="color:var(--text-white)">UnigetUI</strong> pour l'autonomie des utilisateurs</li>
-            </ul>
-
-            <hr class="card-divider">
-
-            <div class="docs-accordion">
-
-              <div class="accordion-group">
-                <button class="accordion-trigger" aria-expanded="false" onclick="toggleAccordion(this)">
-                  📖 Ressources matérielles
-                  <span class="accordion-icon">▼</span>
-                </button>
-                <div class="accordion-content">
-                  <ul class="pdf-list">
-                    <li>
-                      <a href="assets/docs/stage1/os6250_aos_6.6.3_r01_hardware_users_guide.pdf" target="_blank">
-                        <span class="pdf-icon">📄</span>
-                        Guide matériel — Switch Alcatel-Lucent OS6250 AOS 6.6.3
-                      </a>
-                    </li>
-                    <li>
-                      <a href="assets/docs/stage1/reinitialisation_d_un_switch_alcatel-lucent_os6250-24.pdf" target="_blank">
-                        <span class="pdf-icon">📄</span>
-                        Réinitialisation d'un switch Alcatel-Lucent OS6250-24
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+          <article class="project-card">
+            <header>
+              <h4>Première année — Projet M2L</h4>
+              <span class="project-tag reseaux">Réseaux</span>
+            </header>
+            <div class="project-content">
+              <h5>Contexte</h5>
+              <p>La <strong style="color:var(--text-white)">Maison des Ligues de Lorraine (M2L)</strong> met à disposition des locaux et services pour les ligues sportives régionales. Gérée par le CROSL.</p>
+              <h5>Travaux réalisés</h5>
+              <ul>
+                <li>Calcul de la longueur totale du câblage fibre optique</li>
+                <li>Élaboration d'un devis pour le matériel réseau</li>
+                <li>Réalisation d'un schéma de câblage par étage</li>
+              </ul>
+              <hr class="card-divider">
+              <div class="project-actions">
+                <a href="doc-m2l.html" class="button secondary-button">Voir la documentation →</a>
               </div>
-
-              <div class="accordion-group">
-                <button class="accordion-trigger" aria-expanded="false" onclick="toggleAccordion(this)">
-                  📝 Documentations réalisées
-                  <span class="accordion-icon">▼</span>
-                </button>
-                <div class="accordion-content">
-                  <ul class="pdf-list">
-                    <li><a href="assets/docs/stage1/installation_de_proxmox.pdf" target="_blank"><span class="pdf-icon">📄</span>Installation de Proxmox</a></li>
-                    <li><a href="assets/docs/stage1/creation-dun-serveur-gitlab.pdf" target="_blank"><span class="pdf-icon">📄</span>Création d'un serveur GitLab</a></li>
-                    <li><a href="assets/docs/stage1/creation_d_un_projet_sur_gitlab.pdf" target="_blank"><span class="pdf-icon">📄</span>Création d'un projet sur GitLab</a></li>
-                    <li><a href="assets/docs/stage1/installation_et_configuration_de_certificats_ssl_avec.pdf" target="_blank"><span class="pdf-icon">📄</span>Installation et configuration de certificats SSL</a></li>
-                    <li><a href="assets/docs/stage1/realisation_de_l_automatisation.pdf" target="_blank"><span class="pdf-icon">📄</span>Réalisation de l'automatisation</a></li>
-                    <li><a href="assets/docs/stage1/scoop_annexe.pdf" target="_blank"><span class="pdf-icon">📄</span>Scoop — Annexe</a></li>
-                  </ul>
-                </div>
-              </div>
-
             </div>
-            </div>
-        </article>
+          </article>
 
-        <article class="project-card">
-          <header>
-            <h4>Stage 2ème Année<br>NAC, Audit &amp; Sécurisation Réseau/AD</h4>
-            <span class="project-tag securite">Sécurité</span>
-          </header>
-          <div class="project-content">
-
-            <p class="stage-period" style="--dot-color: var(--neon-pink)">2ème année BTS SIO</p>
-
-            <h5>Mission</h5>
-            <p>Déploiement <strong style="color:var(--text-white)">PacketFence v15</strong>, pilotage réseau Aruba/HP, intégration Active Directory &amp; audits de sécurité complets.</p>
-
-            <h5>Réalisations techniques</h5>
-            <ul>
-              <li>Virtualisation <strong style="color:var(--text-white)">PacketFence v15</strong> sur Proxmox</li>
-              <li>Sécurisation <strong style="color:var(--text-white)">SNMPv3</strong> — architecture Aruba 2930F &amp; HP Comware v5</li>
-              <li>Jonction au domaine <strong style="color:var(--text-white)">Active Directory</strong> (Samba, UCS, Scribe, Windows Server)</li>
-              <li>Audits <strong style="color:var(--text-white)">Purple Knight</strong> &amp; <strong style="color:var(--text-white)">PingCastle</strong> + remédiation complète</li>
-            </ul>
-
-            <hr class="card-divider">
-
-            <div class="docs-accordion">
-
-              <div class="accordion-group">
-                <button class="accordion-trigger" aria-expanded="false" onclick="toggleAccordion(this)">
-                  🏗️ Infrastructures &amp; Active Directory
-                  <span class="accordion-icon">▼</span>
-                </button>
-                <div class="accordion-content">
-                  <ul class="pdf-list">
-                    <li><a href="assets/docs/stage2/mise_au_point_de_proxmox_a_partir_de_debian_13.pdf" target="_blank"><span class="pdf-icon">📄</span>Mise au point de Proxmox — Debian 13</a></li>
-                    <li><a href="assets/docs/stage2/montage_d_un_laboratoire_active_directory_sur_proxmox.pdf" target="_blank"><span class="pdf-icon">📄</span>Montage d'un laboratoire Active Directory sur Proxmox</a></li>
-                    <li><a href="assets/docs/stage2/deploiement_d_un_controleur_de_domaine_active_directory_avec_ucs.pdf" target="_blank"><span class="pdf-icon">📄</span>Déploiement d'un contrôleur de domaine AD avec UCS</a></li>
-                    <li><a href="assets/docs/stage2/documentation_technique_ad_dc_samba_4_sur_lxc_debian_13_1_.pdf" target="_blank"><span class="pdf-icon">📄</span>Documentation technique — AD DC Samba 4 sur LXC Debian 13</a></li>
-                    <li><a href="assets/docs/stage2/mise_en_œuvre_de_scribe_ad.pdf" target="_blank"><span class="pdf-icon">📄</span>Mise en œuvre de Scribe-AD</a></li>
-                    <li><a href="assets/docs/stage2/mon_guide_gerer_la_cle_ventoy_et_l_espace_proxmox.pdf" target="_blank"><span class="pdf-icon">📄</span>Guide — Gérer la clé Ventoy et l'espace Proxmox</a></li>
-                    <li><a href="assets/docs/stage2/configuration_ad_et_jonction_des_postes_1_.pdf" target="_blank"><span class="pdf-icon">📄</span>Configuration AD et jonction des postes</a></li>
-                    <li><a href="assets/docs/stage2/oradad.pdf" target="_blank"><span class="pdf-icon">📄</span>ORADAD</a></li>
-                  </ul>
-                </div>
+          <article class="project-card">
+            <header>
+              <h4>Deuxième année — Projet CUB</h4>
+              <span class="project-tag systemes">Virtualisation</span>
+            </header>
+            <div class="project-content">
+              <h5>Contexte</h5>
+              <p>La société <strong style="color:var(--text-white)">CUB</strong> incube des startups solidaires et propose la location d'espaces de travail via une plateforme BtoB.</p>
+              <h5>Travaux réalisés</h5>
+              <ul>
+                <li>Environnement virtualisé Proxmox / VMware</li>
+                <li>Configuration DNS, DHCP, Firewall Stormshield, AD</li>
+                <li>Supervision Centreon + gestion GLPI</li>
+              </ul>
+              <hr class="card-divider">
+              <div class="project-actions">
+                <a href="doc-cub.html" class="button secondary-button">Voir la documentation →</a>
               </div>
-
-              <div class="accordion-group">
-                <button class="accordion-trigger" aria-expanded="false" onclick="toggleAccordion(this)">
-                  🔍 Audits de Sécurité
-                  <span class="accordion-icon">▼</span>
-                </button>
-                <div class="accordion-content">
-                  <ul class="pdf-list">
-                    <li><a href="assets/docs/stage2/audit_de_securite_active_directory_avec_purple_knight_samba-ad.pdf" target="_blank"><span class="pdf-icon">📄</span>Audit Purple Knight — Samba-AD</a></li>
-                    <li><a href="assets/docs/stage2/audit_de_securite_active_directory_avec_purple_knight_scribe-ad.pdf" target="_blank"><span class="pdf-icon">📄</span>Audit Purple Knight — Scribe-AD</a></li>
-                    <li><a href="assets/docs/stage2/audit_de_securite_active_directory_avec_purple_knight_ucs-ad.pdf" target="_blank"><span class="pdf-icon">📄</span>Audit Purple Knight — UCS-AD</a></li>
-                    <li><a href="assets/docs/stage2/audit_de_securite_active_directory_avec_purple_knight_win-serv.pdf" target="_blank"><span class="pdf-icon">📄</span>Audit Purple Knight — Windows Server</a></li>
-                    <li><a href="assets/docs/stage2/audit_de_securite_active_directory_samba-ad_avec_pingcastle.pdf" target="_blank"><span class="pdf-icon">📄</span>Audit PingCastle — Samba-AD</a></li>
-                    <li><a href="assets/docs/stage2/audit_de_securite_active_directory_scribe-ad_avec_pingcastle.pdf" target="_blank"><span class="pdf-icon">📄</span>Audit PingCastle — Scribe-AD</a></li>
-                    <li><a href="assets/docs/stage2/audit_de_securite_active_directory_ucs-ad_avec_pingcastle.pdf" target="_blank"><span class="pdf-icon">📄</span>Audit PingCastle — UCS-AD</a></li>
-                    <li><a href="assets/docs/stage2/audit_de_securite_active_directory_win-serv_avec_pingcastle.pdf" target="_blank"><span class="pdf-icon">📄</span>Audit PingCastle — Windows Server</a></li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="accordion-group">
-                <button class="accordion-trigger" aria-expanded="false" onclick="toggleAccordion(this)">
-                  🔧 Remédiations &amp; Réseau (PacketFence / Switch)
-                  <span class="accordion-icon">▼</span>
-                </button>
-                <div class="accordion-content">
-                  <ul class="pdf-list">
-                    <li><a href="assets/docs/stage2/remediation_securisation_de_l_annuaire_lab.local_samba_.pdf" target="_blank"><span class="pdf-icon">📄</span>remédiation Samba-AD</a></li>
-                    <li><a href="assets/docs/stage2/remediation_securisation_de_l_annuaire_lab.local_win_serv_.pdf" target="_blank"><span class="pdf-icon">📄</span>remédiation Windows Server</a></li>
-                    <li><a href="assets/docs/stage2/remediation_securisation_de_l_annuaire_scribe.local.pdf" target="_blank"><span class="pdf-icon">📄</span>remédiation Scribe-AD</a></li>
-                    <li><a href="assets/docs/stage2/remediation_technique_ucs_securisation_active_directory.pdf" target="_blank"><span class="pdf-icon">📄</span>remédiation UCS-AD</a></li>
-                    <li><a href="assets/docs/stage2/reinitialisation_et_securisation_switch_hp.pdf" target="_blank"><span class="pdf-icon">📄</span>réinitialisation &amp; sécurisation switch HP</a></li>
-                    <li><a href="assets/docs/stage2/configuration_switch_hp_et_proxmox.pdf" target="_blank"><span class="pdf-icon">📄</span>configuration switch HP &amp; Proxmox</a></li>
-                    <li><a href="assets/docs/stage2/installation_de_packetfence_sur_proxmox.pdf" target="_blank"><span class="pdf-icon">📄</span>installation PacketFence sur Proxmox</a></li>
-                    <li><a href="assets/docs/stage2/stabilisation_et_configuration_packetfence_v15.pdf" target="_blank"><span class="pdf-icon">📄</span>stabilisation &amp; configuration PacketFence v15</a></li>
-                    <li><a href="assets/docs/stage2/integration_active_directory_pf_.pdf" target="_blank"><span class="pdf-icon">📄</span>intégration Active Directory — PacketFence</a></li>
-                    <li><a href="assets/docs/stage2/depannage_packetfence_et_switch_hp.pdf" target="_blank"><span class="pdf-icon">📄</span>dépannage PacketFence &amp; switch HP</a></li>
-                    <li><a href="assets/docs/stage2/aruba_packetfence_vlan_integration_.pdf" target="_blank"><span class="pdf-icon">📄</span>Aruba — PacketFence VLAN integration</a></li>
-                  </ul>
-                </div>
-              </div>
-
             </div>
-            </div>
-        </article>
+          </article>
 
-      </div>
-    </section>
-
-    <section id="personnel" class="project-category" aria-labelledby="personnel-title">
-  <h3 id="personnel-title">🚀 Projets Personnels</h3>
-
-  <div class="project-grid">
-
-    <!-- PROJET 1 : PIPELINE DATA & IA -->
-    <article class="project-card" style="--card-accent: #3498db;">
-      <header>
-        <h4>Observatoire de Réputation<br>Pipeline Data &amp; IA en Production</h4>
-        <span class="project-tag data" style="background: rgba(52, 152, 219, 0.1); color: #3498db; border: 1px solid rgba(52, 152, 219, 0.2);">Data / IA</span>
-      </header>
-      <div class="project-content">
-        <h5>Description</h5>
-        <p>Conception d'une application web décisionnelle automatisée réalisant la collecte, l'analyse sémantique et la synthèse de données textuelles complexes.</p>
-
-        <h5>Architecture &amp; Réalisations</h5>
-        <ul>
-          <li><strong>Data Engineering :</strong> Extraction de contenus web en temps réel (Scraping) via <strong style="color:var(--text-white)">Requests &amp; BeautifulSoup4</strong>.</li>
-          <li><strong>Data Analytics (NLP) :</strong> Développement d'un algorithme déterministe de notation lexicale pour l'analyse de sentiments en français.</li>
-          <li><strong>Génie IA (LLM) :</strong> Interconnexion asynchrone par requêtes <strong style="color:var(--text-white)">HTTP POST (API REST)</strong> avec le modèle open-source <strong style="color:var(--text-white)">open-mistral-7b</strong> de Mistral AI.</li>
-          <li><strong>Data Viz :</strong> Restitution dynamique des indicateurs clés (KPI) et graphiques sur un dashboard <strong style="color:var(--text-white)">Streamlit</strong> avec <strong style="color:var(--text-white)">Matplotlib</strong>.</li>
-        </ul>
-
-        <hr class="card-divider">
-        <div class="project-actions">
-          <a href="https://github.com/moudjahidy1assoumani-ai/pipeline-data-ia-mistral" target="_blank" class="button secondary-button">Code Source GitHub ↗</a>
         </div>
-      </div>
-    </article>
+      </section>
 
-    <!-- PROJET 2 : UNDERCOVER FR -->
-    <article class="project-card" style="--card-accent: #9b59b6;">
-      <header>
-        <h4>Undercover FR<br>Jeu Web Applicatif Multijoueur</h4>
-        <span class="project-tag dev" style="background: rgba(155, 89, 182, 0.1); color: #9b59b6; border: 1px solid rgba(155, 89, 182, 0.2);">Full-Stack</span>
-      </header>
-      <div class="project-content">
-        <h5>Description</h5>
-        <p>Développement intégral d'une application web de jeu multijoueur synchrone, axée sur une expérience utilisateur fluide et une synchronisation temps réel.</p>
+      <!-- SECTIONS : STAGES -->
+      <section id="projets-stage" class="project-category" aria-labelledby="stage-title">
+        <h3 id="stage-title">💼 Projets de Stage</h3>
 
-        <h5>Spécifications techniques</h5>
-        <ul>
-          <li><strong>Frontend :</strong> Architecture modulaire en <strong style="color:var(--text-white)">Vanilla JS (ES Modules)</strong> propulsée par le bundler <strong style="color:var(--text-white)">Vite</strong> et stylisée avec <strong style="color:var(--text-white)">Tailwind CSS</strong>.</li>
-          <li><strong>Backend-as-a-Service :</strong> Intégration de <strong style="color:var(--text-white)">Firebase</strong> (Realtime Database &amp; Anonymous Authentication) pour la persistance des salons.</li>
-          <li><strong>Logique métier :</strong> Algorithmes complexes de distribution équitable des rôles et gestion temps réel du cycle de vie des sessions de jeu.</li>
-          <li><strong>Déploiement :</strong> Pipeline d'intégration et déploiement continus (CI/CD) vers la plateforme Cloud <strong style="color:var(--text-white)">Vercel</strong>.</li>
-        </ul>
+        <div class="project-grid">
 
-        <hr class="card-divider">
-        <div class="project-actions">
-          <a href="https://github.com/moudjahidy1assoumani-ai/undercover-fr" target="_blank" class="button secondary-button">Code Source GitHub ↗</a>
+          <article class="project-card" style="--card-accent: var(--neon-emerald);">
+            <header>
+              <h4>Stage 1ère Année<br>Déploiement logiciel &amp; Automatisation</h4>
+              <span class="project-tag auto">Automatisation</span>
+            </header>
+            <div class="project-content">
+              <p class="stage-period">Mai — Juin 2025</p>
+              <h5>Mission</h5>
+              <p>Déploiement d'infrastructure logicielle via <strong style="color:var(--text-white)">Scoop &amp; GitLab</strong> sur environnement Proxmox avec automatisation PowerShell.</p>
+
+              <h5>Réalisations techniques</h5>
+              <ul>
+                <li>Mise en place d'un serveur <strong style="color:var(--text-white)">Proxmox</strong> avec VMs Windows et serveur GitLab</li>
+                <li>Scripts <strong style="color:var(--text-white)">PowerShell</strong> pour l'automatisation via Scoop</li>
+                <li>Environnement de pré-production &amp; synchronisation de buckets</li>
+                <li>Déploiement <strong style="color:var(--text-white)">UnigetUI</strong> pour l'autonomie des utilisateurs</li>
+              </ul>
+
+              <hr class="card-divider">
+
+              <div class="docs-accordion">
+                <div class="accordion-group">
+                  <button class="accordion-trigger" aria-expanded="false" onclick="toggleAccordion(this)">
+                    📖 Ressources matérielles <span class="accordion-icon">▼</span>
+                  </button>
+                  <div class="accordion-content">
+                    <ul class="pdf-list">
+                      <li><a href="assets/docs/stage1/os6250_aos_6.6.3_r01_hardware_users_guide.pdf" target="_blank"><span class="pdf-icon">📄</span>Guide matériel — Alcatel OS6250</a></li>
+                      <li><a href="assets/docs/stage1/reinitialisation_d_un_switch_alcatel-lucent_os6250-24.pdf" target="_blank"><span class="pdf-icon">📄</span>Réinitialisation switch Alcatel OS6250</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="accordion-group">
+                  <button class="accordion-trigger" aria-expanded="false" onclick="toggleAccordion(this)">
+                    📝 Documentations réalisées <span class="accordion-icon">▼</span>
+                  </button>
+                  <div class="accordion-content">
+                    <ul class="pdf-list">
+                      <li><a href="assets/docs/stage1/installation_de_proxmox.pdf" target="_blank"><span class="pdf-icon">📄</span>Installation de Proxmox</a></li>
+                      <li><a href="assets/docs/stage1/creation-dun-serveur-gitlab.pdf" target="_blank"><span class="pdf-icon">📄</span>Création d'un serveur GitLab</a></li>
+                      <li><a href="assets/docs/stage1/creation_d_un_projet_sur_gitlab.pdf" target="_blank"><span class="pdf-icon">📄</span>Création d'un projet sur GitLab</a></li>
+                      <li><a href="assets/docs/stage1/installation_et_configuration_de_certificats_ssl_avec.pdf" target="_blank"><span class="pdf-icon">📄</span>Configuration de certificats SSL</a></li>
+                      <li><a href="assets/docs/stage1/realisation_de_l_automatisation.pdf" target="_blank"><span class="pdf-icon">📄</span>Réalisation de l'automatisation</a></li>
+                      <li><a href="assets/docs/stage1/scoop_annexe.pdf" target="_blank"><span class="pdf-icon">📄</span>Scoop — Annexe</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <header>
+              <h4>Stage 2ème Année<br>NAC, Audit &amp; Sécurisation Réseau/AD</h4>
+              <span class="project-tag securite">Sécurité</span>
+            </header>
+            <div class="project-content">
+              <p class="stage-period" style="--dot-color: var(--neon-pink)">2ème année BTS SIO</p>
+              <h5>Mission</h5>
+              <p>Déploiement <strong style="color:var(--text-white)">PacketFence v15</strong>, pilotage réseau Aruba/HP, intégration Active Directory &amp; audits de sécurité complets.</p>
+
+              <h5>Réalisations techniques</h5>
+              <ul>
+                <li>Virtualisation <strong style="color:var(--text-white)">PacketFence v15</strong> sur Proxmox</li>
+                <li>Sécurisation <strong style="color:var(--text-white)">SNMPv3</strong> — architecture Aruba 2930F &amp; HP Comware v5</li>
+                <li>Jonction au domaine <strong style="color:var(--text-white)">Active Directory</strong> (Samba, UCS, Scribe)</li>
+                <li>Audits <strong style="color:var(--text-white)">Purple Knight</strong> &amp; <strong style="color:var(--text-white)">PingCastle</strong> + remédiation complète</li>
+              </ul>
+
+              <hr class="card-divider">
+
+              <div class="docs-accordion">
+                <div class="accordion-group">
+                  <button class="accordion-trigger" aria-expanded="false" onclick="toggleAccordion(this)">
+                    🏗️ Infrastructures &amp; Active Directory <span class="accordion-icon">▼</span>
+                  </button>
+                  <div class="accordion-content">
+                    <ul class="pdf-list">
+                      <li><a href="assets/docs/stage2/mise_au_point_de_proxmox_a_partir_de_debian_13.pdf" target="_blank"><span class="pdf-icon">📄</span>Proxmox — Debian 13</a></li>
+                      <li><a href="assets/docs/stage2/montage_d_un_laboratoire_active_directory_sur_proxmox.pdf" target="_blank"><span class="pdf-icon">📄</span>Lab AD sur Proxmox</a></li>
+                      <li><a href="assets/docs/stage2/deploiement_d_un_controleur_de_domaine_active_directory_avec_ucs.pdf" target="_blank"><span class="pdf-icon">📄</span>Contrôleur de domaine AD avec UCS</a></li>
+                      <li><a href="assets/docs/stage2/documentation_technique_ad_dc_samba_4_sur_lxc_debian_13_1_.pdf" target="_blank"><span class="pdf-icon">📄</span>AD DC Samba 4 sur LXC</a></li>
+                      <li><a href="assets/docs/stage2/mise_en_œuvre_de_scribe_ad.pdf" target="_blank"><span class="pdf-icon">📄</span>Mise en œuvre de Scribe-AD</a></li>
+                      <li><a href="assets/docs/stage2/mon_guide_gerer_la_cle_ventoy_et_l_espace_proxmox.pdf" target="_blank"><span class="pdf-icon">📄</span>Guide — Ventoy &amp; Proxmox</a></li>
+                      <li><a href="assets/docs/stage2/configuration_ad_et_jonction_des_postes_1_.pdf" target="_blank"><span class="pdf-icon">📄</span>Configuration AD et jonction</a></li>
+                      <li><a href="assets/docs/stage2/oradad.pdf" target="_blank"><span class="pdf-icon">📄</span>ORADAD</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="accordion-group">
+                  <button class="accordion-trigger" aria-expanded="false" onclick="toggleAccordion(this)">
+                    🔍 Audits de Sécurité <span class="accordion-icon">▼</span>
+                  </button>
+                  <div class="accordion-content">
+                    <ul class="pdf-list">
+                      <li><a href="assets/docs/stage2/audit_de_securite_active_directory_avec_purple_knight_samba-ad.pdf" target="_blank"><span class="pdf-icon">📄</span>Audit Purple Knight — Samba</a></li>
+                      <li><a href="assets/docs/stage2/audit_de_securite_active_directory_avec_purple_knight_scribe-ad.pdf" target="_blank"><span class="pdf-icon">📄</span>Audit Purple Knight — Scribe</a></li>
+                      <li><a href="assets/docs/stage2/audit_de_securite_active_directory_avec_purple_knight_ucs-ad.pdf" target="_blank"><span class="pdf-icon">📄</span>Audit Purple Knight — UCS</a></li>
+                      <li><a href="assets/docs/stage2/audit_de_securite_active_directory_avec_purple_knight_win-serv.pdf" target="_blank"><span class="pdf-icon">📄</span>Audit Purple Knight — Windows</a></li>
+                      <li><a href="assets/docs/stage2/audit_de_securite_active_directory_samba-ad_avec_pingcastle.pdf" target="_blank"><span class="pdf-icon">📄</span>Audit PingCastle — Samba</a></li>
+                      <li><a href="assets/docs/stage2/audit_de_securite_active_directory_scribe-ad_avec_pingcastle.pdf" target="_blank"><span class="pdf-icon">📄</span>Audit PingCastle — Scribe</a></li>
+                      <li><a href="assets/docs/stage2/audit_de_securite_active_directory_ucs-ad_avec_pingcastle.pdf" target="_blank"><span class="pdf-icon">📄</span>Audit PingCastle — UCS</a></li>
+                      <li><a href="assets/docs/stage2/audit_de_securite_active_directory_win-serv_avec_pingcastle.pdf" target="_blank"><span class="pdf-icon">📄</span>Audit PingCastle — Windows</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="accordion-group">
+                  <button class="accordion-trigger" aria-expanded="false" onclick="toggleAccordion(this)">
+                    🔧 Remédiations &amp; Réseau <span class="accordion-icon">▼</span>
+                  </button>
+                  <div class="accordion-content">
+                    <ul class="pdf-list">
+                      <li><a href="assets/docs/stage2/remediation_securisation_de_l_annuaire_lab.local_samba_.pdf" target="_blank"><span class="pdf-icon">📄</span>Remédiation Samba-AD</a></li>
+                      <li><a href="assets/docs/stage2/remediation_securisation_de_l_annuaire_lab.local_win_serv_.pdf" target="_blank"><span class="pdf-icon">📄</span>Remédiation Windows Server</a></li>
+                      <li><a href="assets/docs/stage2/remediation_securisation_de_l_annuaire_scribe.local.pdf" target="_blank"><span class="pdf-icon">📄</span>Remédiation Scribe-AD</a></li>
+                      <li><a href="assets/docs/stage2/remediation_technique_ucs_securisation_active_directory.pdf" target="_blank"><span class="pdf-icon">📄</span>Remédiation UCS-AD</a></li>
+                      <li><a href="assets/docs/stage2/reinitialisation_et_securisation_switch_hp.pdf" target="_blank"><span class="pdf-icon">📄</span>Sécurisation switch HP</a></li>
+                      <li><a href="assets/docs/stage2/configuration_switch_hp_et_proxmox.pdf" target="_blank"><span class="pdf-icon">📄</span>Configuration switch HP &amp; Proxmox</a></li>
+                      <li><a href="assets/docs/stage2/installation_de_packetfence_sur_proxmox.pdf" target="_blank"><span class="pdf-icon">📄</span>Installation PacketFence</a></li>
+                      <li><a href="assets/docs/stage2/stabilisation_et_configuration_packetfence_v15.pdf" target="_blank"><span class="pdf-icon">📄</span>Configuration PacketFence v15</a></li>
+                      <li><a href="assets/docs/stage2/integration_active_directory_pf_.pdf" target="_blank"><span class="pdf-icon">📄</span>Intégration AD — PacketFence</a></li>
+                      <li><a href="assets/docs/stage2/depannage_packetfence_et_switch_hp.pdf" target="_blank"><span class="pdf-icon">📄</span>Dépannage PacketFence &amp; HP</a></li>
+                      <li><a href="assets/docs/stage2/aruba_packetfence_vlan_integration_.pdf" target="_blank"><span class="pdf-icon">📄</span>Aruba — PacketFence Integration</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
         </div>
-      </div>
-    </article>
+      </section>
 
-  </div>
-</section>
+      <!-- SECTIONS : PROJETS PERSONNELS -->
+      <section id="personnel" class="project-category" aria-labelledby="personnel-title">
+        <h3 id="personnel-title">🚀 Projets Personnels</h3>
 
+        <div class="project-grid">
+
+          <!-- PROJET 1 : PIPELINE DATA & IA -->
+          <article class="project-card" style="--card-accent: #3498db;">
+            <header>
+              <h4>Observatoire de Réputation<br>Pipeline Data &amp; IA en Production</h4>
+              <span class="project-tag data" style="background: rgba(52, 152, 219, 0.1); color: #3498db; border: 1px solid rgba(52, 152, 219, 0.2);">Data / IA</span>
+            </header>
+            <div class="project-content">
+              <h5>Description</h5>
+              <p>Conception d'une application web décisionnelle automatisée réalisant la collecte, l'analyse sémantique et la synthèse de données textuelles complexes.</p>
+
+              <h5>Architecture &amp; Réalisations</h5>
+              <ul>
+                <li><strong>Data Engineering :</strong> Extraction de contenus web en temps réel (Scraping) via <strong style="color:var(--text-white)">Requests &amp; BeautifulSoup4</strong>.</li>
+                <li><strong>Data Analytics (NLP) :</strong> Développement d'un algorithme déterministe de notation lexicale pour l'analyse de sentiments en français.</li>
+                <li><strong>Génie IA (LLM) :</strong> Interconnexion asynchrone par requêtes <strong style="color:var(--text-white)">HTTP POST (API REST)</strong> avec le modèle open-source <strong style="color:var(--text-white)">open-mistral-7b</strong> de Mistral AI.</li>
+                <li><strong>Data Viz :</strong> Restitution dynamique des indicateurs clés (KPI) et graphiques sur un dashboard <strong style="color:var(--text-white)">Streamlit</strong> avec <strong style="color:var(--text-white)">Matplotlib</strong>.</li>
+              </ul>
+
+              <hr class="card-divider">
+              <div class="project-actions">
+                <a href="https://github.com/moudjahidy1assoumani-ai/pipeline-data-ia-mistral" target="_blank" class="button secondary-button">Code Source GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJET 2 : UNDERCOVER FR -->
+          <article class="project-card" style="--card-accent: #9b59b6;">
+            <header>
+              <h4>Undercover FR<br>Jeu Web Applicatif Multijoueur</h4>
+              <span class="project-tag dev" style="background: rgba(155, 89, 182, 0.1); color: #9b59b6; border: 1px solid rgba(155, 89, 182, 0.2);">Full-Stack</span>
+            </header>
+            <div class="project-content">
+              <h5>Description</h5>
+              <p>Développement intégral d'une application web de jeu multijoueur synchrone, axée sur une expérience utilisateur fluide et une synchronisation temps réel.</p>
+
+              <h5>Spécifications techniques</h5>
+              <ul>
+                <li><strong>Frontend :</strong> Architecture modulaire en <strong style="color:var(--text-white)">Vanilla JS (ES Modules)</strong> propulsée par <strong style="color:var(--text-white)">Vite</strong> et stylisée avec <strong style="color:var(--text-white)">Tailwind CSS</strong>.</li>
+                <li><strong>Backend-as-a-Service :</strong> Intégration de <strong style="color:var(--text-white)">Firebase</strong> (Realtime Database &amp; Anonymous Auth) pour la persistance des salons.</li>
+                <li><strong>Logique métier :</strong> Algorithmes complexes de distribution équitable des rôles et gestion temps réel des sessions de jeu.</li>
+                <li><strong>Déploiement :</strong> Pipeline d'intégration et déploiement continus (CI/CD) vers la plateforme Cloud <strong style="color:var(--text-white)">Vercel</strong>.</li>
+              </ul>
+
+              <hr class="card-divider">
+              <div class="project-actions">
+                <a href="https://github.com/moudjahidy1assoumani-ai/undercover-fr" target="_blank" class="button secondary-button">Code Source GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+    </div> <!-- FIN DU CONTAINER PRINCIPAL -->
+  </main> <!-- FIN DU MAIN CONTEXT -->
 
   <footer class="site-footer">
     <div class="container">
-      <p style="color:var(--text-muted);font-family:var(--font-mono);font-size:0.8rem;">&copy; 2025 Assoumani Moudjahidy</p>
+      <p style="color:var(--text-muted);font-family:var(--font-mono);font-size:0.8rem;">&copy; 2026 Assoumani Moudjahidy</p>
       <div class="footer-links">
         <a href="mailto:moudjahidy1.assoumani@gmail.com">✉ moudjahidy1.assoumani@gmail.com</a>
         <span class="footer-divider">|</span>
@@ -333,7 +315,6 @@
       var content = group.querySelector('.accordion-content');
       var isOpen = content.classList.contains('open');
 
-      // Fermer tous les accordéons de la même carte
       var parentAccordion = btn.closest('.docs-accordion');
       parentAccordion.querySelectorAll('.accordion-content').forEach(function(c) {
         c.classList.remove('open');
@@ -342,14 +323,12 @@
         b.setAttribute('aria-expanded', 'false');
       });
 
-      // Ouvrir celui-ci s'il était fermé
       if (!isOpen) {
         content.classList.add('open');
         btn.setAttribute('aria-expanded', 'true');
       }
     }
 
-    // Smooth scroll + état actif pour les tabs
     document.querySelectorAll('.tab-link').forEach(function(link) {
       link.addEventListener('click', function() {
         document.querySelectorAll('.tab-link').forEach(function(l) { l.classList.remove('active'); });
