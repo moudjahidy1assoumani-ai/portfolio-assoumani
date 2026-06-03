@@ -254,9 +254,62 @@
     </section>
 
     <section id="personnel" class="project-category" aria-labelledby="personnel-title">
-      <h3 id="personnel-title">🚀 Projets Personnels</h3>
-      <p class="no-content">Aucun projet personnel majeur documenté pour le moment — revenez bientôt !</p>
-    </section>
+  <h3 id="personnel-title">🚀 Projets Personnels</h3>
+
+  <div class="project-grid">
+
+    <!-- PROJET 1 : PIPELINE DATA & IA -->
+    <article class="project-card" style="--card-accent: #3498db;">
+      <header>
+        <h4>Observatoire de Réputation<br>Pipeline Data &amp; IA en Production</h4>
+        <span class="project-tag data" style="background: rgba(52, 152, 219, 0.1); color: #3498db; border: 1px solid rgba(52, 152, 219, 0.2);">Data / IA</span>
+      </header>
+      <div class="project-content">
+        <h5>Description</h5>
+        <p>Conception d'une application web décisionnelle automatisée réalisant la collecte, l'analyse sémantique et la synthèse de données textuelles complexes.</p>
+
+        <h5>Architecture &amp; Réalisations</h5>
+        <ul>
+          <li><strong>Data Engineering :</strong> Extraction de contenus web en temps réel (Scraping) via <strong style="color:var(--text-white)">Requests &amp; BeautifulSoup4</strong>.</li>
+          <li><strong>Data Analytics (NLP) :</strong> Développement d'un algorithme déterministe de notation lexicale pour l'analyse de sentiments en français.</li>
+          <li><strong>Génie IA (LLM) :</strong> Interconnexion asynchrone par requêtes <strong style="color:var(--text-white)">HTTP POST (API REST)</strong> avec le modèle open-source <strong style="color:var(--text-white)">open-mistral-7b</strong> de Mistral AI.</li>
+          <li><strong>Data Viz :</strong> Restitution dynamique des indicateurs clés (KPI) et graphiques sur un dashboard <strong style="color:var(--text-white)">Streamlit</strong> avec <strong style="color:var(--text-white)">Matplotlib</strong>.</li>
+        </ul>
+
+        <hr class="card-divider">
+        <div class="project-actions">
+          <a href="https://github.com/moudjahidy1assoumani-ai/pipeline-data-ia-mistral" target="_blank" class="button secondary-button">Code Source GitHub ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROJET 2 : UNDERCOVER FR -->
+    <article class="project-card" style="--card-accent: #9b59b6;">
+      <header>
+        <h4>Undercover FR<br>Jeu Web Applicatif Multijoueur</h4>
+        <span class="project-tag dev" style="background: rgba(155, 89, 182, 0.1); color: #9b59b6; border: 1px solid rgba(155, 89, 182, 0.2);">Full-Stack</span>
+      </header>
+      <div class="project-content">
+        <h5>Description</h5>
+        <p>Développement intégral d'une application web de jeu multijoueur synchrone, axée sur une expérience utilisateur fluide et une synchronisation temps réel.</p>
+
+        <h5>Spécifications techniques</h5>
+        <ul>
+          <li><strong>Frontend :</strong> Architecture modulaire en <strong style="color:var(--text-white)">Vanilla JS (ES Modules)</strong> propulsée par le bundler <strong style="color:var(--text-white)">Vite</strong> et stylisée avec <strong style="color:var(--text-white)">Tailwind CSS</strong>.</li>
+          <li><strong>Backend-as-a-Service :</strong> Intégration de <strong style="color:var(--text-white)">Firebase</strong> (Realtime Database &amp; Anonymous Authentication) pour la persistance des salons.</li>
+          <li><strong>Logique métier :</strong> Algorithmes complexes de distribution équitable des rôles et gestion temps réel du cycle de vie des sessions de jeu.</li>
+          <li><strong>Déploiement :</strong> Pipeline d'intégration et déploiement continus (CI/CD) vers la plateforme Cloud <strong style="color:var(--text-white)">Vercel</strong>.</li>
+        </ul>
+
+        <hr class="card-divider">
+        <div class="project-actions">
+          <a href="https://github.com/moudjahidy1assoumani-ai/undercover-fr" target="_blank" class="button secondary-button">Code Source GitHub ↗</a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
 
     <section class="container synthesis-section" id="synthese">
       <h2 class="section-heading">
